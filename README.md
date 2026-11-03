@@ -134,3 +134,23 @@ npm run build
 ## Лицензия
 
 MIT License
+
+
+## Offline regression tests and calibration scope
+
+From `backend/`, run `python -m unittest discover -s tests -v`. Tests train only
+small synthetic CPU examples or mock transformer loading; they do not download a
+checkpoint, access an external service or establish classification accuracy.
+
+For newly trained scikit-learn bundles (metadata version 1.1), probability
+calibration wraps the complete TF-IDF + logistic-regression pipeline. Each
+calibration fold learns its vocabulary and IDF from that fold's training documents
+only. Uncalibrated small-data training still fits the full supplied training set.
+The bundle records the input CSV SHA-256, package/Python versions and feature-fit
+scope. Existing version 1.0 bundles remain loadable, but must be retrained to use
+the corrected procedure; no old model scores have been replaced or reinterpreted.
+
+Calibration folds are not an independent final evaluation. Before making quality
+claims, define lawful data provenance, keep duplicate/related documents in the same
+partition, hold out a final test set and report class coverage and metrics there.
+The synthetic tests do not validate calibration on a real-world population.
