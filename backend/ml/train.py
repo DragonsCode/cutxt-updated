@@ -8,6 +8,9 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
+import platform
+from importlib.metadata import version
 import os
 from collections import Counter
 
@@ -22,7 +25,10 @@ from nlp.text_for_ml import normalize_text_for_ml
 
 
 def train_from_csv(csv_path: str) -> tuple[Pipeline, dict]:
-    df = pd.read_csv(csv_path, encoding="utf-8")
+    with open(csv_path, "rb") as source:
+        input_sha256 = hashlib.file_digest(source, "sha256").hexdigest()
+        source.seek(0)
+        df = pd.read_csv(source, encoding="utf-8")
     if "text" not in df.columns or "label" not in df.columns:
         raise ValueError("CSV must contain columns: text, label")
 
@@ -60,16 +66,23 @@ def train_from_csv(csv_path: str) -> tuple[Pipeline, dict]:
         calibration_cv = min(5, max(2, n_samples // 4), min_per_class)
 
     calibrated = calibration_cv is not None
+    estimator = Pipeline([("tfidf", tfidf), ("clf", base_lr)])
     if calibrated:
-        clf = CalibratedClassifierCV(base_lr, method="sigmoid", cv=calibration_cv)
+        # Calibrate raw documents so each fold learns vocabulary and IDF only
+        # from its training subset. Pre-fitting TF-IDF on all rows leaks held-out
+        # document statistics into the calibration folds.
+        clf = CalibratedClassifierCV(estimator, method="sigmoid", cv=calibration_cv, ensemble=True)
+        pipe = Pipeline([("clf", clf)])
     else:
-        clf = base_lr
-
-    pipe = Pipeline([("tfidf", tfidf), ("clf", clf)])
+        pipe = estimator
     pipe.fit(texts, labels)
 
     meta = {
-        "version": "1.0",
+        "version": "1.1",
+        "input_sha256": input_sha256,
+        "python": platform.python_version(),
+        "packages": {name: version(name) for name in ("scikit-learn", "numpy", "pandas")},
+        "feature_fit_scope": "calibration_training_fold" if calibrated else "all_training_rows",
         "calibrated": calibrated,
         "calibration_cv": calibration_cv,
         "train_samples": n_samples,
