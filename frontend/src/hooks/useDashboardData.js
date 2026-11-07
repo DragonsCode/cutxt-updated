@@ -1,119 +1,85 @@
-import { useState, useEffect, useCallback } from "react";
-import { notifications } from "@mantine/notifications";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { formatApiError } from "../api/client.js";
 import {
   fetchDatabases,
   fetchDocuments,
   fetchClassifications,
+  fetchMlStatus,
 } from "../api/resources.js";
 
+const loaders = {
+  databases: fetchDatabases,
+  documents: fetchDocuments,
+  classifications: fetchClassifications,
+  mlStatus: fetchMlStatus,
+};
+const initialLoading = Object.fromEntries(
+  Object.keys(loaders).map((key) => [key, true]),
+);
+
 export function useDashboardData() {
-  const [databases, setDatabases] = useState([]);
-  const [documents, setDocuments] = useState([]);
-  const [classifications, setClassifications] = useState([]);
-  const [loading, setLoading] = useState({
-    databases: true,
-    documents: true,
-    classifications: true,
+  const [data, setData] = useState({
+    databases: [],
+    documents: [],
+    classifications: [],
+    mlStatus: null,
   });
+  const [loading, setLoading] = useState(initialLoading);
+  const [errors, setErrors] = useState({});
+  const [lastUpdated, setLastUpdated] = useState(null);
+  const controllers = useRef({});
 
-  const refetchDatabases = useCallback(async () => {
-    setLoading((p) => ({ ...p, databases: true }));
+  const refetch = useCallback(async (key) => {
+    controllers.current[key]?.abort();
+    const controller = new AbortController();
+    controllers.current[key] = controller;
+    setLoading((previous) => ({ ...previous, [key]: true }));
     try {
-      setDatabases(await fetchDatabases());
-    } catch (e) {
-      console.error(e);
-      notifications.show({
-        title: "Ошибка загрузки",
-        message: formatApiError(e),
-        color: "red",
-      });
+      const value = await loaders[key]({ signal: controller.signal });
+      if (controller.signal.aborted) return;
+      setData((previous) => ({ ...previous, [key]: value }));
+      setErrors((previous) => ({ ...previous, [key]: null }));
+      setLastUpdated(new Date());
+    } catch (error) {
+      if (!controller.signal.aborted)
+        setErrors((previous) => ({
+          ...previous,
+          [key]: formatApiError(error),
+        }));
     } finally {
-      setLoading((p) => ({ ...p, databases: false }));
+      if (!controller.signal.aborted)
+        setLoading((previous) => ({ ...previous, [key]: false }));
     }
   }, []);
 
-  const refetchDocuments = useCallback(async () => {
-    setLoading((p) => ({ ...p, documents: true }));
-    try {
-      setDocuments(await fetchDocuments());
-    } catch (e) {
-      console.error(e);
-      notifications.show({
-        title: "Ошибка загрузки",
-        message: formatApiError(e),
-        color: "red",
-      });
-    } finally {
-      setLoading((p) => ({ ...p, documents: false }));
-    }
-  }, []);
-
-  const refetchClassifications = useCallback(async () => {
-    setLoading((p) => ({ ...p, classifications: true }));
-    try {
-      setClassifications(await fetchClassifications());
-    } catch (e) {
-      console.error(e);
-      notifications.show({
-        title: "Ошибка загрузки",
-        message: formatApiError(e),
-        color: "red",
-      });
-    } finally {
-      setLoading((p) => ({ ...p, classifications: false }));
-    }
-  }, []);
+  const refetchDatabases = useCallback(() => refetch("databases"), [refetch]);
+  const refetchDocuments = useCallback(() => refetch("documents"), [refetch]);
+  const refetchClassifications = useCallback(
+    () => refetch("classifications"),
+    [refetch],
+  );
+  const refreshAll = useCallback(
+    () => Promise.all(Object.keys(loaders).map(refetch)),
+    [refetch],
+  );
 
   useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      setLoading({
-        databases: true,
-        documents: true,
-        classifications: true,
-      });
-      try {
-        const [d, doc, c] = await Promise.all([
-          fetchDatabases(),
-          fetchDocuments(),
-          fetchClassifications(),
-        ]);
-        if (!cancelled) {
-          setDatabases(d);
-          setDocuments(doc);
-          setClassifications(c);
-        }
-      } catch (e) {
-        if (!cancelled) {
-          notifications.show({
-            title: "Ошибка загрузки",
-            message: formatApiError(e),
-            color: "red",
-          });
-        }
-      } finally {
-        if (!cancelled) {
-          setLoading({
-            databases: false,
-            documents: false,
-            classifications: false,
-          });
-        }
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+    refreshAll();
+    const activeControllers = controllers.current;
+    return () =>
+      Object.values(activeControllers).forEach((controller) =>
+        controller.abort(),
+      );
+  }, [refreshAll]);
 
   return {
-    databases,
-    documents,
-    classifications,
+    ...data,
     loading,
+    errors,
+    lastUpdated,
     refetchDatabases,
     refetchDocuments,
     refetchClassifications,
+    refreshAll,
   };
 }

@@ -1,0 +1,694 @@
+{
+  "sources": {
+    "farmoni.docx": {
+      "bytes": 74120,
+      "sha256": "8e301bfe332b0662a977baa47754559955930af56cb22a3b048e9f3d829f2942"
+    },
+    "database.sqlite": {
+      "bytes": 32768,
+      "sha256": "8279894c81b5135ff51482c8bbe7d92cd9456a8d94080b5b68828c9e1dd6cbd9"
+    }
+  },
+  "database": {
+    "id": 1,
+    "name": "Учительница — database.sqlite (4 папки)"
+  },
+  "document": {
+    "id": 2,
+    "name": "Учительница — farmoni.docx"
+  },
+  "baseline": {
+    "response": {
+      "classification_id": 2,
+      "document_id": 2,
+      "database_id": 1,
+      "classifier_method": "dictionary",
+      "classification_result": {
+        "predicted_category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+        "predicted_category_id": 2,
+        "relative_score_share": 0.9988750877920615,
+        "confidence": 0.9988750877920615,
+        "margin_raw": 5100.010000000003,
+        "margin_share": 0.9977501755841229,
+        "runner_up_category_id": 4,
+        "runner_up_category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+        "runner_up_raw": 5.75,
+        "runner_up_share": 0.0011249122079385538,
+        "only_one_scoring_class": false,
+        "all_scores": {
+          "1": 0.0,
+          "2": 5105.760000000003,
+          "3": 0.0,
+          "4": 5.75
+        },
+        "all_scores_by_name": {
+          "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)": 0.0,
+          "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)": 5105.760000000003,
+          "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)": 0.0,
+          "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)": 5.75
+        },
+        "score_shares": {
+          "1": 0.0,
+          "2": 0.9988750877920615,
+          "3": 0.0,
+          "4": 0.0011249122079385538
+        },
+        "score_shares_by_name": {
+          "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)": 0.0,
+          "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)": 0.9988750877920615,
+          "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)": 0.0,
+          "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)": 0.0011249122079385538
+        }
+      }
+    },
+    "request_seconds": 2.221
+  },
+  "updated": {
+    "response": {
+      "classification_id": 2,
+      "document_id": 2,
+      "database_id": 1,
+      "classifier_method": "dictionary",
+      "classification_result": {
+        "classification_kind": "dictionary",
+        "classifier_version": "dictionary-2.0",
+        "matching": "Uzbek Latin/Cyrillic, contiguous phrases and bounded suffix rules",
+        "matched_keyword_rows": 71,
+        "matched_keywords": [
+          {
+            "key": "Ахборот",
+            "category_id": 2,
+            "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+            "occurrences": 38,
+            "score": 8390.4
+          },
+          {
+            "key": "Vazir",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 19,
+            "score": 6594.900000000001
+          },
+          {
+            "key": "prezident",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 13,
+            "score": 5811.26
+          },
+          {
+            "key": "O'zbekiston Respublikasi Prezidenti",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 11,
+            "score": 5182.099999999999
+          },
+          {
+            "key": "maktab",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 107,
+            "score": 4622.4
+          },
+          {
+            "key": "amaliyot",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 12,
+            "score": 3952.32
+          },
+          {
+            "key": "o'zlashtirish",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 4,
+            "score": 1988.0
+          },
+          {
+            "key": "Oliy ta'lim",
+            "category_id": 2,
+            "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+            "occurrences": 12,
+            "score": 1909.92
+          },
+          {
+            "key": "davlat",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 41,
+            "score": 1798.26
+          },
+          {
+            "key": "o'quvchilar,",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 57,
+            "score": 1764.72
+          },
+          {
+            "key": "mahkama",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 3,
+            "score": 1402.5
+          },
+          {
+            "key": "qaror",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 2,
+            "score": 1374.4
+          },
+          {
+            "key": "farmon",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 12,
+            "score": 822.0
+          },
+          {
+            "key": "yoshlar",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 19,
+            "score": 727.32
+          },
+          {
+            "key": "axborot texnologiyalari",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 5,
+            "score": 615.0
+          },
+          {
+            "key": "rivojlantirish",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 35,
+            "score": 556.85
+          },
+          {
+            "key": "talaba,",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 497.0
+          },
+          {
+            "key": "axborot",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 38,
+            "score": 355.68
+          },
+          {
+            "key": "pedagog,",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 25,
+            "score": 299.24999999999994
+          },
+          {
+            "key": "teatr",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 2,
+            "score": 262.08
+          },
+          {
+            "key": "reja",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 4,
+            "score": 168.0
+          },
+          {
+            "key": "sinf",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 20,
+            "score": 129.6
+          },
+          {
+            "key": "Ta'lim sohasi",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 9,
+            "score": 116.64
+          },
+          {
+            "key": "yoshlar",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 19,
+            "score": 109.44
+          },
+          {
+            "key": "Sonli",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 3,
+            "score": 105.84
+          },
+          {
+            "key": "o'tkazish",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 10,
+            "score": 81.0
+          },
+          {
+            "key": "ijtimoiy",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 5,
+            "score": 78.0
+          },
+          {
+            "key": "O'zbekiston Respublikasi",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 36,
+            "score": 68.03999999999999
+          },
+          {
+            "key": "mavzu",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 60.06
+          },
+          {
+            "key": "lavozim",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 2,
+            "score": 56.99999999999999
+          },
+          {
+            "key": "илова",
+            "category_id": 2,
+            "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+            "occurrences": 8,
+            "score": 54.72
+          },
+          {
+            "key": "iqtisodiyot",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 5,
+            "score": 53.75
+          },
+          {
+            "key": "muvofiq",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 5,
+            "score": 50.0
+          },
+          {
+            "key": "курс",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 6,
+            "score": 45.0
+          },
+          {
+            "key": "o'rta ta'lim",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 4,
+            "score": 43.199999999999996
+          },
+          {
+            "key": "Oliy va o'rta maxsus ta'lim vazirligi",
+            "category_id": 2,
+            "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+            "occurrences": 2,
+            "score": 38.64
+          },
+          {
+            "key": "kamchilik",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 2,
+            "score": 34.199999999999996
+          },
+          {
+            "key": "talabalar",
+            "category_id": 3,
+            "category": "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)",
+            "occurrences": 1,
+            "score": 25.2
+          },
+          {
+            "key": "o'tkazish",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 10,
+            "score": 21.0
+          },
+          {
+            "key": "tuman,",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 20.88
+          },
+          {
+            "key": "sertifikat",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 2,
+            "score": 19.38
+          },
+          {
+            "key": "faoliyat",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 17,
+            "score": 17.0
+          },
+          {
+            "key": "hokim",
+            "category_id": 1,
+            "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+            "occurrences": 1,
+            "score": 15.66
+          },
+          {
+            "key": "farmon",
+            "category_id": 2,
+            "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+            "occurrences": 12,
+            "score": 14.399999999999999
+          },
+          {
+            "key": "madaniy",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 14.1
+          },
+          {
+            "key": "fanlar",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 17,
+            "score": 13.600000000000001
+          },
+          {
+            "key": "Ma'naviy",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 2,
+            "score": 13.16
+          },
+          {
+            "key": "Ishlab chiqish",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 22,
+            "score": 11.66
+          },
+          {
+            "key": "oliy ta'lim",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 12,
+            "score": 7.199999999999999
+          },
+          {
+            "key": "Илмий",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 7,
+            "score": 7.0
+          },
+          {
+            "key": "taqdim etish",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 5.25
+          },
+          {
+            "key": "qaror",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 2,
+            "score": 4.5
+          },
+          {
+            "key": "vazifa",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 5,
+            "score": 4.0
+          },
+          {
+            "key": "korxona",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 3.9899999999999998
+          },
+          {
+            "key": "talabalar",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 3.8499999999999996
+          },
+          {
+            "key": "boshqarish,",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 9,
+            "score": 3.6
+          },
+          {
+            "key": "tarkibi",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 3,
+            "score": 3.0
+          },
+          {
+            "key": "amaliy",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 6,
+            "score": 2.4000000000000004
+          },
+          {
+            "key": "kengash",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 12,
+            "score": 2.4000000000000004
+          },
+          {
+            "key": "kengash",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 12,
+            "score": 2.4000000000000004
+          },
+          {
+            "key": "o'quv dastur,",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 6,
+            "score": 2.4000000000000004
+          },
+          {
+            "key": "tartib",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 6,
+            "score": 2.4000000000000004
+          },
+          {
+            "key": "tizimli,",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 3,
+            "score": 1.7999999999999998
+          },
+          {
+            "key": "muddati",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 1.75
+          },
+          {
+            "key": "reja",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 4,
+            "score": 1.4
+          },
+          {
+            "key": "muddat",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 3,
+            "score": 1.2000000000000002
+          },
+          {
+            "key": "конференция",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 0.75
+          },
+          {
+            "key": "umumiy qoidalar",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 0.6
+          },
+          {
+            "key": "guruh",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 0.53
+          },
+          {
+            "key": "rais",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 1,
+            "score": 0.44
+          },
+          {
+            "key": "o'quv reja",
+            "category_id": 4,
+            "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+            "occurrences": 3,
+            "score": 0.3504
+          }
+        ],
+        "predicted_category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+        "predicted_category_id": 1,
+        "relative_score_share": 0.48256960262871945,
+        "confidence": 0.48256960262871945,
+        "margin_raw": 8673.899599999995,
+        "margin_share": 0.17186677399224326,
+        "runner_up_category_id": 4,
+        "runner_up_category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+        "runner_up_raw": 15680.780400000001,
+        "runner_up_share": 0.3107028286364762,
+        "only_one_scoring_class": false,
+        "all_scores": {
+          "1": 24354.679999999997,
+          "2": 10408.08,
+          "3": 25.2,
+          "4": 15680.780400000001
+        },
+        "all_scores_by_name": {
+          "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)": 24354.679999999997,
+          "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)": 10408.08,
+          "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)": 25.2,
+          "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)": 15680.780400000001
+        },
+        "score_shares": {
+          "1": 0.48256960262871945,
+          "2": 0.2062282497543767,
+          "3": 0.0004993189804277342,
+          "4": 0.3107028286364762
+        },
+        "score_shares_by_name": {
+          "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)": 0.48256960262871945,
+          "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)": 0.2062282497543767,
+          "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)": 0.0004993189804277342,
+          "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)": 0.3107028286364762
+        }
+      }
+    },
+    "request_seconds": 0.452
+  },
+  "ml": {
+    "classification_id": 3,
+    "document_id": 2,
+    "database_id": -1,
+    "classifier_method": "ml",
+    "classification_result": {
+      "predicted_category": "Ta'lim",
+      "predicted_category_id": 7,
+      "relative_score_share": 0.950308664123997,
+      "confidence": 0.950308664123997,
+      "margin_raw": 0.911909761826684,
+      "margin_share": 0.911909761826684,
+      "runner_up_category_id": null,
+      "runner_up_category": "Iqtisodiyot",
+      "runner_up_raw": 0.03839890229731284,
+      "runner_up_share": 0.03839890229731284,
+      "only_one_scoring_class": false,
+      "all_scores": {
+        "0": 0.000523973883430925,
+        "1": 0.03839890229731284,
+        "2": 4.735310562327927e-05,
+        "3": 0.0006938293951637016,
+        "4": 0.00019900323803475372,
+        "5": 1.8867622290692006e-05,
+        "6": 6.787089847625847e-07,
+        "7": 0.9503086641239968,
+        "8": 0.009807748788343767,
+        "9": 9.788368183348056e-07
+      },
+      "all_scores_by_name": {
+        "Ekologiya": 0.000523973883430925,
+        "Iqtisodiyot": 0.03839890229731284,
+        "Madaniyat": 4.735310562327927e-05,
+        "Oila va Jamiyat": 0.0006938293951637016,
+        "Salomatlik": 0.00019900323803475372,
+        "Siyosat": 1.8867622290692006e-05,
+        "Sport": 6.787089847625847e-07,
+        "Ta'lim": 0.9503086641239968,
+        "Texnologiya": 0.009807748788343767,
+        "Xorijiy Yangiliklar": 9.788368183348056e-07
+      },
+      "score_shares": {
+        "0": 0.0005239738834309252,
+        "1": 0.03839890229731285,
+        "2": 4.735310562327928e-05,
+        "3": 0.0006938293951637018,
+        "4": 0.00019900323803475375,
+        "5": 1.886762229069201e-05,
+        "6": 6.787089847625848e-07,
+        "7": 0.950308664123997,
+        "8": 0.009807748788343769,
+        "9": 9.788368183348059e-07
+      },
+      "score_shares_by_name": {
+        "Ekologiya": 0.0005239738834309252,
+        "Iqtisodiyot": 0.03839890229731285,
+        "Madaniyat": 4.735310562327928e-05,
+        "Oila va Jamiyat": 0.0006938293951637018,
+        "Salomatlik": 0.00019900323803475375,
+        "Siyosat": 1.886762229069201e-05,
+        "Sport": 6.787089847625848e-07,
+        "Ta'lim": 0.950308664123997,
+        "Texnologiya": 0.009807748788343769,
+        "Xorijiy Yangiliklar": 9.788368183348059e-07
+      },
+      "classification_kind": "ml",
+      "calibrated": true,
+      "model_version": "uzbek-topics-1.0"
+    }
+  },
+  "checks": [
+    "Old cached result automatically refreshed",
+    "Stable classification ID",
+    "Cache hit and force recompute consistent",
+    "Dictionary folder 1",
+    "News ML topic Education",
+    "Downloads equal originals",
+    "Originals unchanged"
+  ]
+}

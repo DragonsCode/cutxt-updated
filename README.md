@@ -1,136 +1,54 @@
 # CuTxT
 
-Веб-приложение для классификации текстов и документов (PDF, DOCX). Два режима:
+Классификация узбекских документов на латинице и кириллице. FastAPI, React, SQLite.
 
-- **Словарь (эталон)** — сопоставление с загруженной SQLite-эталонной базой.
-- **ML** — либо CPU demo на `scikit-learn` (TF-IDF + логистическая регрессия), либо transformer-модель, обученная на GPU в Google Colab и запускаемая в API на CPU.
+Три метода:
 
-Стек: **FastAPI** + **SQLAlchemy** (метаданные в SQLite), **React** + **Vite** + **Mantine**.
+- **Словарь** — взвешенные совпадения с ключами из базы.
+- **Архивный анализ** — учитывает заголовок, основной текст и приложения; спорные результаты помечает для ручной проверки.
+- **ML** — определяет общую тему. Текущая модель обучена на внешнем новостном корпусе, а не на архивных папках.
 
-## Требования
-
-- **Docker** и **Docker Compose** *или*
-- **Python 3.12** (рекомендуется; для 3.14 часто нет готовых wheel у `scipy`, установка может потребовать сборку из исходников)
-- **Node.js 20+** и **npm** — для локального фронтенда
-
-## Быстрый старт: Docker Compose
-
-Из корня репозитория:
+## Запуск
 
 ```bash
 docker compose up --build
 ```
 
-- **Фронт:** http://localhost:5173  
-- **API:** http://localhost:8000  
-- **Проверка API:** http://localhost:8000/health  
+Интерфейс: `http://localhost:5173`, API: `http://localhost:8000`.
 
-Данные метаданных API в Compose хранятся в volume `db-data` (путь в контейнере задаётся `DATABASE_URL`).
+Без Docker, два терминала. Нужны Python 3.12 и Node.js 20+.
 
-Переменные окружения бэкенда (см. `docker-compose.yml`): `DATABASE_URL`, `CORS_ORIGINS`, `MAX_UPLOAD_BYTES`, `ML_MODEL_PATH` (необязательно; если не задана, API сначала ищет `backend/models/transformer_classifier`, затем `backend/models/ml_classifier.joblib`).
-
-## Локальный запуск (два терминала)
-
-### Бэкенд
-
-```bash
+```powershell
 cd backend
-python3.12 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
-По умолчанию создаётся `sqlite:///api.db` в каталоге `backend`. Загруженные эталоны и файлы документов — в `backend/databases/` и `backend/documents/` (каталоги создаются при работе API).
-
-### Фронтенд
-
-```bash
+```powershell
 cd frontend
 npm install
 npm run dev
 ```
 
-Откройте http://localhost:5173 . Запросы к API идут на `http://localhost:8000`, если не задано иное.
+Фронтенд обращается к `http://localhost:8000`. Другой адрес задаётся через `VITE_API_URL` в `frontend/.env`.
 
-### URL API из браузера (другой хост или порт)
+Загрузите PDF, DOCX или вставьте текст. Для первых двух методов нужна SQLite-база с таблицами `tables` и `keys`. В истории доступны объяснение и экспорт результата. Оценки словарных методов не являются вероятностями.
 
-Создайте `frontend/.env`:
+## Модель и проверки
 
-```env
-VITE_API_URL=http://localhost:8000
+Модель и корпус не хранятся в Git. Для повторного обучения из каталога `backend`:
+
+```powershell
+pip install -r requirements-uzbek.txt
+python -m ml.collect_uzbek
+python -m ml.train_uzbek
+python -m unittest discover -s tests -v
 ```
 
-Для доступа к дев-серверу по LAN в `package.json` уже указано `vite --host 0.0.0.0`.
+После обучения перезапустите API. Проверка фронтенда: `npm run lint`, `npm test`, `npm run build`.
 
-## ML-модель
+[Архивный метод](docs/archive-method.md) · [Обучение и результаты ML](docs/uzbek-model.md) · [Пример учительницы](docs/teacher-example-review.md).
 
-В репозитории **не хранятся** реальные датасеты и натренированные модели. После клонирования проект стартует, но ML-режим будет недоступен, пока вы не положите свою модель в `backend/models/` или не зададите `ML_MODEL_PATH`.
-
-API умеет загружать два типа ML-артефактов:
-
-- `backend/models/transformer_classifier/` — каталог с `meta.json`, tokenizer files и transformer-весами.
-- `backend/models/ml_classifier.joblib` — fallback на `scikit-learn`.
-
-Статус активной модели: `GET /ml/status`.
-
-### Формат обучающего CSV
-
-```bash
-text,label
-"Пример текста документа 1",class_a
-"Пример текста документа 2",class_b
-```
-
-В репозитории есть шаблон: `backend/data/train_dataset.csv.example`.
-
-### Рекомендуемый путь: transformer-модель
-
-Готовый ноутбук: `notebooks/train_transformer_colab.ipynb`.
-
-Новый trainer сохраняет transformer-модель каталогом:
-
-```bash
-cd backend
-source .venv/bin/activate
-python -m ml.train_transformer --data data/your_dataset.csv --out-dir models/transformer_classifier
-```
-
-Если модель лежит в `backend/models/transformer_classifier`, API подхватит её автоматически. Иначе укажите путь через `ML_MODEL_PATH`:
-
-```bash
-ML_MODEL_PATH=models/transformer_classifier
-```
-
-Что делает новый pipeline:
-
-- использует `distilbert-base-multilingual-cased`;
-- оставляет текст почти сырым: trim + нормализация пробелов;
-- объединяет метки с `<10` примерами в `Other`;
-- делит датасет в пропорции `80/10/10`;
-- сохраняет `meta.json`, `label_mapping.json` и `metrics.json`.
-
-После обучения **перезапустите** `uvicorn` или контейнер бэкенда.
-
-### Альтернатива: scikit-learn demo
-
-```bash
-cd backend
-source .venv/bin/activate
-python -m ml.train --data data/train_dataset.csv.example --out models/ml_classifier.joblib
-```
-
-Этот путь CPU-only и подходит скорее для быстрых локальных экспериментов.
-
-## Сборка фронтенда для продакшена
-
-```bash
-cd frontend
-npm run build
-```
-
-Артефакты — в `frontend/dist/`. Раздачу статики и проксирование к API настройте на своём reverse proxy.
-
-## Лицензия
-
-MIT License
+MIT. Авторство основы и источники компонентов: [LICENSE](LICENSE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

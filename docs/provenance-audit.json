@@ -1,0 +1,1276 @@
+{
+  "created_at": "2026-10-08T12:05:19.685387+00:00",
+  "kind": "local_provenance_audit_not_plagiarism_check",
+  "plagiarism_percentage": null,
+  "scope": "Git tracked and non-ignored files; declared dependencies; selected local model/source metadata",
+  "baseline_commit": "504e3de3ebf45fe713e92748069a00c050ce7298",
+  "origin": "https://github.com/DragonsCode/cutxt-updated",
+  "historical_author_names": [
+    "Cayatceek",
+    "DragonsCode",
+    "Ganijon",
+    "Ganijon Tashmatov",
+    "GanyaOwl",
+    "Kitora"
+  ],
+  "limitations": [
+    "Git author names do not establish the student's identity or sole authorship.",
+    "Changes relative to HEAD are not a measure of originality or individual authorship.",
+    "No external code corpus, institutional plagiarism service or dissertation manuscript was checked.",
+    "Dependency licenses come from local package metadata, not a full license-compliance review.",
+    "Ignored environments, vendor code, uploads and datasets are outside the source-file inventory."
+  ],
+  "source_file_counts": {
+    "unchanged_relative_to_head": 27,
+    "modified_relative_to_head": 26,
+    "new_relative_to_head": 29
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 5352,
+      "sha256": "8ce098f98d711391f6c6912ad5da0eaab4971d7bbcf21a00bf21fdd52c496b2f",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "5a1e510eba011574510e7ffdb183f30b37d31c63b4d1cb7982eaad1d35e15283"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1085,
+      "sha256": "a5db0a42b1b0d7d002b098ab89fc8f3116f4938eb7f3eab6b69e49790be85098",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "cb026efd5586a5066e6ba03b3c58e8345ebce01963b282a224ad74c92c8b5807"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2462,
+      "sha256": "6692b941af8fb50f4b711596ed13b765762486c345f339a71001d1fac01c2282",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "57634c5b49156fc9350d04209ea8a2f6c56cc6321de185433f05a226db581d9c"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 7994,
+      "sha256": "aff1ada90f3e2b2a5fa646f0376fa66a98034658c7337cd579576786e110ef57",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/Dockerfile",
+      "bytes": 325,
+      "sha256": "cd2d229f61dc13074a3b35766c7de6f47dde58f63cf63948d88d3026b434937f",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "78eb5337feff6e3288a1a66da60a6f4fc9806a5ce58c9bdda62fb92715640d86"
+    },
+    {
+      "path": "backend/data/.gitkeep",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "backend/data/train_dataset.csv.example",
+      "bytes": 587,
+      "sha256": "57643618372a514496af8b0ed2e4af4360fc7f3680c2805effb4f9afafec1f44",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "59f50702cbd8c1e01e298a46bec1bd02fbc938f24bef752a1908bdb9651b1d31"
+    },
+    {
+      "path": "backend/database.py",
+      "bytes": 1350,
+      "sha256": "2f50e19a4cccbd968c6c27474781dd9ccd8d64b1914743e8055ec22914f44c3e",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "936cd2d60c021bc7f8041d57cdafa38e106f9057236997c65a519bfeed42edab"
+    },
+    {
+      "path": "backend/main.py",
+      "bytes": 11331,
+      "sha256": "fe9d6da1dcaf24223da4e00353d77a47e4c1642f673b1696c69a58aacea3cabc",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "407efaa6687ff1fc2723b55a2fbdc5fcaea19076872af4c94fc7ccc5b8086a99"
+    },
+    {
+      "path": "backend/ml/__init__.py",
+      "bytes": 82,
+      "sha256": "da1bbacf7193de64ea70451c63c279dcc7ed822130c5d36b32b0858dcd9d094d",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "9541f7c246ffe9b29082334576c00812bb8e2421b1e407826329db1344b3aeb5"
+    },
+    {
+      "path": "backend/ml/collect_uzbek.py",
+      "bytes": 2215,
+      "sha256": "c8599148abfb945b104e4d866c4777c302fb908bb6b6182c3c32a53fa65103c2",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/ml/result_build.py",
+      "bytes": 3420,
+      "sha256": "ad964b3f12b1e835fe306cbe0c6182daf235f6463da468d7ec6adb6fa251e88b",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "ae4f521d0550bfa850b36edbabcfc483be20df4d81ef4cd6f886782b2b4fe7aa"
+    },
+    {
+      "path": "backend/ml/service.py",
+      "bytes": 7257,
+      "sha256": "1b79648de9d3898b6644bf0692e195abcf356dc909c4d8f05e11a290bbc09f4d",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "4e5f65a6aee6aec787a281c0b99791ba0e302cff125c7b2497d2adc888c7bd25"
+    },
+    {
+      "path": "backend/ml/train.py",
+      "bytes": 3287,
+      "sha256": "7fbfa12b59261f2f67bd27be575a0282e86be5ac01bf810903f9b9e65425dfca",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "09c1c1243a47d666cc81b00fe1ecb63a6401ad81d25059cf0bb7b9bf51021f40"
+    },
+    {
+      "path": "backend/ml/train_transformer.py",
+      "bytes": 15101,
+      "sha256": "31211f9f3882d1ee6252fea9d479aeaa08ad828cfcb99b7865818de146545dd1",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "5bbbfefff886444d7aab00101501c8778904f80e58f8f5badad8d1c7116624a6"
+    },
+    {
+      "path": "backend/ml/train_uzbek.py",
+      "bytes": 9444,
+      "sha256": "e760392b1aa39e59def8fb46550094084f294f79693e64e24a4716aaeccb5468",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/ml/transformer_utils.py",
+      "bytes": 2003,
+      "sha256": "86dea393505bc5752debd1e2f93afad5398e382fa7a5adf2e23b0b16ea21e1d9",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "7f16284ef81a4298dbb0ed766f94b0c1d377e2ad6af7b5ba4c0d8d0ffcffe7eb"
+    },
+    {
+      "path": "backend/models.py",
+      "bytes": 1696,
+      "sha256": "991b715a8a1a3777424843aaf12ef29c5da27ab5eae598b8b7b681d20f036048",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "63ab4b4cfaa0d058c5dab50d7e5b2d39cba0f63d6f81776574122f0a7dbd067b"
+    },
+    {
+      "path": "backend/models/.gitkeep",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "backend/nlp/__init__.py",
+      "bytes": 76,
+      "sha256": "82f82ba75e7a698d0b73521ffdb18fcbf1fb64ac5c1eb1bb0d66298b42b44a0c",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "82f82ba75e7a698d0b73521ffdb18fcbf1fb64ac5c1eb1bb0d66298b42b44a0c"
+    },
+    {
+      "path": "backend/nlp/classifier.py",
+      "bytes": 6445,
+      "sha256": "4b540a84311734993b5a2100449641f614f7c8a310f0436ac9b3e794fa94731c",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "49a6d06ff541ba192ab14c4746a1e7a80d0c2e0a26a51ffc380de62a62ff3d7f"
+    },
+    {
+      "path": "backend/nlp/loader.py",
+      "bytes": 1199,
+      "sha256": "03a78e2e2d380475130f9efd36195c102e524d938018f89bead20d027d5a1fc2",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "31722e01bbe62faf4986e2d64106c39083638d86a041998dd62b5314ffbc0dc0"
+    },
+    {
+      "path": "backend/nlp/preprocessor.py",
+      "bytes": 702,
+      "sha256": "334194884bb681d54252228c7a8379c19125463388241296edc2497186895c84",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "63f8648a550e055949ae0339b8a72a51cae662ef12dec6a137bea3d26fa8faaf"
+    },
+    {
+      "path": "backend/nlp/reference_db.py",
+      "bytes": 2474,
+      "sha256": "250c7b09baf5ad525f5e1d62cc50fcbd774ff74f8ec169d4f2bf75438d1bf215",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "3f6b162445e19ae8b9f2a91e07c5348c121cf02a74d946811a4583c418f20ac3"
+    },
+    {
+      "path": "backend/nlp/structural.py",
+      "bytes": 6844,
+      "sha256": "3d2d9e8536301c2975d75c4b63f24f412e221c133053f6113e8d3b4964f89523",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/nlp/text_for_ml.py",
+      "bytes": 472,
+      "sha256": "8e13fc3d2feb5e1d4ca427810ca671108b5d80c7e31afe3e4a4115144be9b6d1",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "e7c617c3773c1079e913a2a176beffa32f62d6f70284db207c1eac620659741f"
+    },
+    {
+      "path": "backend/nlp/uzbek_normalization.py",
+      "bytes": 1594,
+      "sha256": "029e0ff6a70aa3043ea5ae4ac7d84b02e8b8f7e9f9fe4d7d9de98f2cbaabe9bc",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/requirements-uzbek.txt",
+      "bytes": 225,
+      "sha256": "87d359cc35afe9d13f2341707d9bf3f811b45e29722de5c20a85147f62b96f56",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "bytes": 810,
+      "sha256": "6e2da9a97e07fec5cf2d4ec84210b19c8f887fdb42e13689f7f5451d2a8dabb1",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "cdd6438b20c6a270fbef3dae0d8eaf4fb294bdcbe8d23450aae4bc962f042b36"
+    },
+    {
+      "path": "backend/storage.py",
+      "bytes": 1702,
+      "sha256": "8e4f1730cd04c5596012d51d30cb8c6446f676b0ade94b8dc8a1c220e4d541d5",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "d2320fc2ba2bd214a382bc87706c1a277f348e45a47c327bc8fa12ee0b969cd8"
+    },
+    {
+      "path": "backend/tests/test_classification_cache.py",
+      "bytes": 3342,
+      "sha256": "e6ca98adcefd545a92d0eea77c26f7ec55102a9d8dc0419f96823bea142a71ba",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/tests/test_dictionary.py",
+      "bytes": 4025,
+      "sha256": "52b33acb256da1c3c413331d467111fbc742fa2b0c26c163b5676f5476e72139",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/tests/test_structural.py",
+      "bytes": 4273,
+      "sha256": "5e2f16a3d3f160e679debc1c2ee33bd79559561dee56a5bf9b938689f8b3d724",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "backend/tests/test_train.py",
+      "bytes": 2921,
+      "sha256": "2c20472e6d4043d02ef835ad54eecbd94fb27d0663ab9c36f7900614c76a01ea",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "42aa05391a79d047b5efdf166998dafb2c66d7b1222a3a77659ef88a3d9db719"
+    },
+    {
+      "path": "backend/tests/test_transformer.py",
+      "bytes": 8189,
+      "sha256": "b6b345a6faf4b1a437f4eaa9ec364143e7bbc63988ef4fe88688c6e217706310",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "1d94d2a993e64389673da09460bf3ac23dc10d05c5de9d528d4e699d4402bc5e"
+    },
+    {
+      "path": "backend/tests/test_uzbek.py",
+      "bytes": 5320,
+      "sha256": "bdfa37d928813c6f875c9d2717e8c36f41e891251d01be1d9acc084695413878",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "docker-compose.yml",
+      "bytes": 731,
+      "sha256": "d8000f2f76f069e2d54e6587be42ed588041542971aa2b02b90254ca4481905e",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "2e0e34c67a6f0dbf45bf2faf0e9994df3babf7685f3f63f2423ff5d58c363098"
+    },
+    {
+      "path": "docs/archive-example-test.json",
+      "bytes": 82764,
+      "sha256": "dae1246792d4c29689bcae138b434a82396d9e82f0cb08401558aff01f8bfa7e",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "docs/archive-method.md",
+      "bytes": 6420,
+      "sha256": "6e803ddd9d0e6b2f8a99f96c8a20afe8c903f2c1a048dcfa85def54cea22dcbc",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "docs/dissertation-provenance-review.md",
+      "bytes": 14420,
+      "sha256": "4809a4a7119c3709fc329602a24261354501bea8586e5cbacf4c52c4398d32e0",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "docs/references.bib",
+      "bytes": 1987,
+      "sha256": "b311b197427e75a11a7bd6cff66761b6a4e614c1bff4e7119573576105c2ca22",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "docs/teacher-example-review.md",
+      "bytes": 7639,
+      "sha256": "2f90165793995f7a2e66239c820ded00ee8a8d45b321d17b91ab133ba74fda46",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "docs/teacher-example-test.json",
+      "bytes": 29856,
+      "sha256": "9f0e774555cb39a8b7c0e18ac9bd3bc886df35f89b64e009c1461e580c491151",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "docs/uzbek-model-report.json",
+      "bytes": 7123,
+      "sha256": "82aa75dbe0e44cfccc256baf4e0b45c56d2b2a0b1d1f775e3dac7b07775ef53c",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "docs/uzbek-model.md",
+      "bytes": 8171,
+      "sha256": "b67e1728e33d1fc89f14d112e8f386a84586f46a41976d0be697f12c70cd0586",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/Dockerfile",
+      "bytes": 131,
+      "sha256": "ab8f216af696a1eb4603973a10abb4f61cad43cc0a3cb7e9be2414b3d517c9fd",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "b4eaf040852e8d804617067990c449abe5ea597c8bab634d47d33e3fbd87fd92"
+    },
+    {
+      "path": "frontend/eslint.config.js",
+      "bytes": 833,
+      "sha256": "3ad8f3202bdbdff10550db1e46f93147e0a00940ecc77746672bba9c7da2c579",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "38c6066c62e803f0b512c2e18297c36cdeaccd6a1190c1cc19cc59c96c74bbc1"
+    },
+    {
+      "path": "frontend/index.html",
+      "bytes": 958,
+      "sha256": "e5c6f550adc6c8c5f4e018b60d505fce3a98c8f10537ad97c96446b9d4818127",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "bff11255eec74c1f4bcf03868ef92e4fab7a32307870355e7b0c9961aa0a9856"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 132902,
+      "sha256": "336c862d46b597671f6a8d1e2212fb4d240c883b2d18bc99bcb7aa71fc27e331",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "7505d7ac7a1d399f2e5a7450143b830c485a3072d89c112eac5eb3adbeb94fde"
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 1019,
+      "sha256": "a0168a48c0bbcf959992e5133bceda042c9390f1b6a115b8e63121ec7e792954",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "14857d7af1c9f4fd747677812bc6ce3a1274ff5568677cd877c2d357fb23d400"
+    },
+    {
+      "path": "frontend/postcss.config.cjs",
+      "bytes": 357,
+      "sha256": "38e83ce151cd69e4d6c320b515aa59b92dd9e6ec544134fa1dd63c73bbc1dc29",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "6ce1bec29b9d857ae4c7d166743a37df347cdd56ee2d70f857a32b8ed0a668d3"
+    },
+    {
+      "path": "frontend/public/favicon.svg",
+      "bytes": 270,
+      "sha256": "d07ac11dd3e3616a178c2f3ef8e2a9a57fa15c85ecbc2b30fe2919a1a2d1ad18",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/public/vite.svg",
+      "bytes": 1497,
+      "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb"
+    },
+    {
+      "path": "frontend/src/App.jsx",
+      "bytes": 19050,
+      "sha256": "fe1a7e6c0652911846324a9369868012e98872b06bfe95bb64ddc4f5e4819133",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "0e6c43ac17b224038701eb96a28128e3cdfc9c6a2d484dbe73b8bd2ed3c0a27e"
+    },
+    {
+      "path": "frontend/src/api/client.js",
+      "bytes": 996,
+      "sha256": "e963afbe924e98311f2f1c04e35335ec8d51c5cda20ee26cb8082533bf93e241",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "62aecdf4db1d98392ffb558d7483f292aeb1a8cc3b7845e8f10e7f5eca1040a6"
+    },
+    {
+      "path": "frontend/src/api/resources.js",
+      "bytes": 1745,
+      "sha256": "6720fb45a64477171f64e948206636036131d01bcddd88812a9961b079a5b6af",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "72556903aac3fbd798ccfcb1b61f46a5eba7175b375c4e3ad955d0e77f295877"
+    },
+    {
+      "path": "frontend/src/assets/react.svg",
+      "bytes": 4126,
+      "sha256": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5"
+    },
+    {
+      "path": "frontend/src/components/AppHeader.jsx",
+      "bytes": 3187,
+      "sha256": "b4fad277161f943a122b3f7c30d77cb9416b800a7760b321035cf89d033a4c62",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "abd1732069899f9a51535fb979e1e6d9b7aec4df454498a39f6298a27dbad8c0"
+    },
+    {
+      "path": "frontend/src/components/ClassificationForm.jsx",
+      "bytes": 7028,
+      "sha256": "540c61d2f59a09287ab02acadbab3788f820561a8849e8b67ef7e96b386ff143",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/components/DashboardOverview.jsx",
+      "bytes": 8770,
+      "sha256": "bdf0b5f25c895d1a591421350a501c71e2e2290c145d9e076f2c8e36e484666e",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/components/DashboardSidebar.jsx",
+      "bytes": 3524,
+      "sha256": "0dfd63db283215346ed32db0f6922e87eed3d550ca2ce95d8306977985b7a3a7",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/components/modals/ClassifyModal.jsx",
+      "bytes": 506,
+      "sha256": "6a90714b50ad28cb4100d7c6329bcde4620ba5f84a25c5823d5576063c745611",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "a1cf799391c86f8e2ad7029d2485f8cf84bbc017f2ab66e4d135ecca0daf9020"
+    },
+    {
+      "path": "frontend/src/components/modals/DatabaseModal.jsx",
+      "bytes": 2939,
+      "sha256": "fc324f92c5eb77fd233f8e2a48acb85f4d6c5564bd5b3a435f7c2bcec7fe9d06",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "8c2fb6fbcc296783f71e06dcb8b59249c2a5b061b6e142fe27c1692924ecf1f1"
+    },
+    {
+      "path": "frontend/src/components/modals/DocumentModal.jsx",
+      "bytes": 4816,
+      "sha256": "3f6b32b664ec4215336a0b35fbfb7b832439c92646fbb22b27ec10ede09fd2b8",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "ffae483d13a54685c5f64a2a51bad72aa0e930faede1df61ea906f837b8056ba"
+    },
+    {
+      "path": "frontend/src/components/modals/ResultModal.jsx",
+      "bytes": 11359,
+      "sha256": "659c3b8ec70775930de5efb32d6945eaa399ce4084da0c59c082fca1f0d6c2bf",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "7c5c134ccefd7587e07ac2506b031603a12d30d8d7140d2b5b9cd64e65e80ef2"
+    },
+    {
+      "path": "frontend/src/components/panels/ClassificationsPanel.jsx",
+      "bytes": 9107,
+      "sha256": "e3b18526110d77bbfff95b351da85d69903324547d521fbb8ce50f30ca276faf",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "4332c6dcb33332a187f95ee20046a35223faef561416614a641db70a783e435a"
+    },
+    {
+      "path": "frontend/src/components/panels/DatabasesPanel.jsx",
+      "bytes": 150,
+      "sha256": "38f111151586ea90982e526d394abe880e4579c910d17c37a9d637813dae9a61",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "dbbee2188a16aea05a0b0ea153cd7c1b4ea0e3144a67e52da352a7b7e0ab9fde"
+    },
+    {
+      "path": "frontend/src/components/panels/DocumentsPanel.jsx",
+      "bytes": 150,
+      "sha256": "bd4fcdc07a912f1dd37ac0fcf1b4dbf4816f56e7a2387e16c7c96f44721aedf8",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "bab2ff1eaf02d527d14a06dc01993650ed33edc6c9802491741fed428a2517f9"
+    },
+    {
+      "path": "frontend/src/components/panels/ModelsPanel.jsx",
+      "bytes": 7895,
+      "sha256": "f632d7534a6ba5c1232ceadc9ab0659daa1301003ab8684544ccdefc99b26ee9",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/components/panels/PanelPrimitives.jsx",
+      "bytes": 1883,
+      "sha256": "55ea39fccc80a806ca93bafa36605ffe3292b968afece5789aca2441d4860da0",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/components/panels/ResourcePanel.jsx",
+      "bytes": 9834,
+      "sha256": "879bb8f0602a23744eeabfc4bfd344ba028ea4a6f52bd726e2ca1c077eac6abe",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/hooks/useDashboardData.js",
+      "bytes": 2428,
+      "sha256": "62e013bd977f2bbb6d779101f8bab022f990d150d407f6616889eb8c232e69a0",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "2d41016438805cd8563109aacc739a79e059a458be4c03a119c4333c5317ef0e"
+    },
+    {
+      "path": "frontend/src/main.jsx",
+      "bytes": 1593,
+      "sha256": "902f32aa802e807de99dfe3e90e2badba5646d37a94c8048d71cb9a32082785e",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "77778eaf2cddb4e5e6e9a7965be2b2df511971aab2a946bb013b090aafcc6ea5"
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "bytes": 23760,
+      "sha256": "44418998c0fb8040b4f060bee4a52540cbaa1c76ba475ce92267818a7498b872",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/utils/classification.js",
+      "bytes": 2152,
+      "sha256": "81471410cd64e9d43bb2ff4d29d82304813deaddeb138da063fec88030be9446",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "a3fd33d10849bd6035dcfded0eebb6dd9e7ef1cbd348acc602a2529f5d58adce"
+    },
+    {
+      "path": "frontend/src/utils/dashboard.js",
+      "bytes": 3108,
+      "sha256": "c917b64ff87361fd59b2258716925d57a0e4dc29be6ffaa38b92693064b1761a",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/utils/dashboard.test.js",
+      "bytes": 5045,
+      "sha256": "60cf4148c35dd325fdd06aa93cad33be4991c1b04e0cd2cf21a2a08a97acb97e",
+      "baseline_state": "new_relative_to_head"
+    },
+    {
+      "path": "frontend/src/utils/download.js",
+      "bytes": 783,
+      "sha256": "1c92d2ecd3f392e591164a41e06b8f2b5608695f86c1687f80ab2fcc04926299",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "f3779bcc793eb0fa938fbaef30306a400dc7637fa39148dde55d7891862d8b61"
+    },
+    {
+      "path": "frontend/src/utils/files.js",
+      "bytes": 295,
+      "sha256": "2d3c948aad96edf2b1bbaec260bfdf21877489978a4599140bbbd6d178b848cb",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "8029da74514174b0edba3c2e2d4a4b0726f339e2cdbd4c18e730d63d3b0cb41d"
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "bytes": 954,
+      "sha256": "b9eaa4b99bd3bc4de37b59ec2c074729f92f325b445a41c92a17f861cc3ad72a",
+      "baseline_state": "modified_relative_to_head",
+      "baseline_sha256": "e2fae7121adca624761e2dd019000ab7d42c777785690c41ee81c03926e5f64e"
+    },
+    {
+      "path": "notebooks/train_transformer_colab.ipynb",
+      "bytes": 2719,
+      "sha256": "29740bd8b7a9386c6fd0506cc1c70d7cc97ac738ac4c6d3cb67bbf218d4beeee",
+      "baseline_state": "unchanged_relative_to_head",
+      "baseline_sha256": "53530cd7181acc4c939fa309945911aab2690c8357631b54aef7e8b591a241c0",
+      "notebook_cells": 6,
+      "cells_with_outputs": 0
+    },
+    {
+      "path": "scripts/audit_provenance.py",
+      "bytes": 7292,
+      "sha256": "80eab2a01822b22c6f30de519255a310a7feb7ad4f7440409ef3556f672284af",
+      "baseline_state": "new_relative_to_head"
+    }
+  ],
+  "frontend_direct_dependencies": [
+    {
+      "name": "@mantine/core",
+      "kind": "dependencies",
+      "requirement": "^9.0.0",
+      "locked_version": "9.0.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@mantine/hooks",
+      "kind": "dependencies",
+      "requirement": "^9.0.0",
+      "locked_version": "9.0.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@mantine/modals",
+      "kind": "dependencies",
+      "requirement": "^9.0.0",
+      "locked_version": "9.0.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@mantine/notifications",
+      "kind": "dependencies",
+      "requirement": "^9.0.0",
+      "locked_version": "9.0.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@tabler/icons-react",
+      "kind": "dependencies",
+      "requirement": "^3.41.1",
+      "locked_version": "3.41.1",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "axios",
+      "kind": "dependencies",
+      "requirement": "^1.12.2",
+      "locked_version": "1.14.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "react",
+      "kind": "dependencies",
+      "requirement": "^19.1.1",
+      "locked_version": "19.2.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "react-dom",
+      "kind": "dependencies",
+      "requirement": "^19.1.1",
+      "locked_version": "19.2.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@eslint/js",
+      "kind": "devDependencies",
+      "requirement": "^9.36.0",
+      "locked_version": "9.37.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@types/react",
+      "kind": "devDependencies",
+      "requirement": "^19.1.16",
+      "locked_version": "19.2.2",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@types/react-dom",
+      "kind": "devDependencies",
+      "requirement": "^19.1.9",
+      "locked_version": "19.2.1",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "kind": "devDependencies",
+      "requirement": "^5.0.4",
+      "locked_version": "5.0.4",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "baseline-browser-mapping",
+      "kind": "devDependencies",
+      "requirement": "^2.9.11",
+      "locked_version": "2.9.11",
+      "declared_license": "Apache-2.0"
+    },
+    {
+      "name": "eslint",
+      "kind": "devDependencies",
+      "requirement": "^9.36.0",
+      "locked_version": "9.37.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "kind": "devDependencies",
+      "requirement": "^5.2.0",
+      "locked_version": "5.2.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "eslint-plugin-react-refresh",
+      "kind": "devDependencies",
+      "requirement": "^0.4.22",
+      "locked_version": "0.4.23",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "globals",
+      "kind": "devDependencies",
+      "requirement": "^16.4.0",
+      "locked_version": "16.4.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "postcss",
+      "kind": "devDependencies",
+      "requirement": "^8.5.8",
+      "locked_version": "8.5.8",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "postcss-preset-mantine",
+      "kind": "devDependencies",
+      "requirement": "^1.18.0",
+      "locked_version": "1.18.0",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "postcss-simple-vars",
+      "kind": "devDependencies",
+      "requirement": "^7.0.1",
+      "locked_version": "7.0.1",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "vite",
+      "kind": "devDependencies",
+      "requirement": "^7.1.7",
+      "locked_version": "7.1.12",
+      "declared_license": "MIT"
+    }
+  ],
+  "frontend_lock_dependency_entries": 267,
+  "frontend_lock_license_counts": {
+    "MIT": 232,
+    "Apache-2.0": 12,
+    "Python-2.0": 1,
+    "CC-BY-4.0": 1,
+    "ISC": 10,
+    "BSD-2-Clause": 6,
+    "BSD-3-Clause": 3,
+    "0BSD": 1,
+    "(MIT OR CC0-1.0)": 1
+  },
+  "backend_declared_dependencies": [
+    {
+      "name": "accelerate",
+      "requirements": [
+        "accelerate>=0.34,<2"
+      ],
+      "installed_version": null,
+      "declared_license": "UNVERIFIED_NOT_INSTALLED"
+    },
+    {
+      "name": "annotated-types",
+      "requirements": [
+        "annotated-types==0.7.0"
+      ],
+      "installed_version": "0.8.0",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "annotated_types-0.8.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "anyio",
+      "requirements": [
+        "anyio==4.11.0"
+      ],
+      "installed_version": "4.15.1",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "anyio-4.15.1.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "cffi",
+      "requirements": [
+        "cffi==2.0.0"
+      ],
+      "installed_version": "2.1.1",
+      "declared_license": "MIT-0",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "cffi-2.1.1.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "charset-normalizer",
+      "requirements": [
+        "charset-normalizer==3.4.3"
+      ],
+      "installed_version": "3.5.2",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "charset_normalizer-3.5.2.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "click",
+      "requirements": [
+        "click==8.3.0"
+      ],
+      "installed_version": "8.5.0",
+      "declared_license": "BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "click-8.5.0.dist-info/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "colorama",
+      "requirements": [
+        "colorama==0.4.6"
+      ],
+      "installed_version": null,
+      "declared_license": "UNVERIFIED_NOT_INSTALLED"
+    },
+    {
+      "name": "cryptography",
+      "requirements": [
+        "cryptography==46.0.2"
+      ],
+      "installed_version": "50.0.2",
+      "declared_license": "Apache-2.0 OR BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "cryptography-50.0.2.dist-info/licenses/LICENSE",
+        "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+        "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD"
+      ]
+    },
+    {
+      "name": "datasets",
+      "requirements": [
+        "datasets>=2.21,<5"
+      ],
+      "installed_version": null,
+      "declared_license": "UNVERIFIED_NOT_INSTALLED"
+    },
+    {
+      "name": "evaluate",
+      "requirements": [
+        "evaluate>=0.4.3,<1"
+      ],
+      "installed_version": null,
+      "declared_license": "UNVERIFIED_NOT_INSTALLED"
+    },
+    {
+      "name": "fastapi",
+      "requirements": [
+        "fastapi==0.119.1"
+      ],
+      "installed_version": "0.119.1",
+      "declared_license": "MIT License",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "fastapi-0.119.1.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "greenlet",
+      "requirements": [
+        "greenlet==3.2.4"
+      ],
+      "installed_version": "3.5.6",
+      "declared_license": "MIT AND PSF-2.0",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "greenlet-3.5.6.dist-info/licenses/LICENSE",
+        "greenlet-3.5.6.dist-info/licenses/LICENSE.PSF"
+      ]
+    },
+    {
+      "name": "h11",
+      "requirements": [
+        "h11==0.16.0"
+      ],
+      "installed_version": "0.16.0",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "h11-0.16.0.dist-info/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "idna",
+      "requirements": [
+        "idna==3.11"
+      ],
+      "installed_version": "3.20",
+      "declared_license": "BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "idna-3.20.dist-info/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "joblib",
+      "requirements": [
+        "joblib==1.5.2"
+      ],
+      "installed_version": "1.5.2",
+      "declared_license": "BSD 3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "joblib-1.5.2.dist-info/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "lxml",
+      "requirements": [
+        "lxml==6.0.2"
+      ],
+      "installed_version": "6.1.1",
+      "declared_license": "BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "lxml-6.1.1.dist-info/licenses/LICENSE.txt",
+        "lxml-6.1.1.dist-info/licenses/LICENSES.txt"
+      ]
+    },
+    {
+      "name": "numpy",
+      "requirements": [
+        "numpy==1.26.4"
+      ],
+      "installed_version": "1.26.4",
+      "declared_license": "Copyright (c) 2005-2023, NumPy Developers.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n    * Redistributions of source code must retain the above copyright\n       notice, this list of conditions and the following disclaimer.\n\n    * Redistributions in binary form must reproduce the above\n       copyright notice, this list of conditions and the following\n       disclaimer in th",
+      "license_metadata_truncated": true,
+      "license_files": [
+        "numpy-1.26.4.dist-info/LICENSE.txt",
+        "numpy/core/include/numpy/random/LICENSE.txt",
+        "numpy/ma/LICENSE",
+        "numpy/random/LICENSE.md"
+      ]
+    },
+    {
+      "name": "pandas",
+      "requirements": [
+        "pandas==2.3.3"
+      ],
+      "installed_version": "2.3.3",
+      "declared_license": "BSD 3-Clause License\n\n Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team\n All rights reserved.\n\n Copyright (c) 2011-2023, Open source contributors.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions are met:\n\n * Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n * Redistributions i",
+      "license_metadata_truncated": true,
+      "license_files": [
+        "pandas-2.3.3.dist-info/LICENSE"
+      ]
+    },
+    {
+      "name": "pdfminer.six",
+      "requirements": [
+        "pdfminer.six==20250506"
+      ],
+      "installed_version": "20251230",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "pdfminer_six-20251230.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pdfplumber",
+      "requirements": [
+        "pdfplumber==0.11.7"
+      ],
+      "installed_version": "0.11.9",
+      "declared_license": "MIT License",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "pdfplumber-0.11.9.dist-info/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "pillow",
+      "requirements": [
+        "pillow==11.3.0"
+      ],
+      "installed_version": "12.3.0",
+      "declared_license": "MIT-CMU",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "pillow-12.3.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pyarrow",
+      "requirements": [
+        "pyarrow==19.0.1"
+      ],
+      "installed_version": "19.0.1",
+      "declared_license": "Apache Software License",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "pyarrow-19.0.1.dist-info/LICENSE.txt",
+        "pyarrow-19.0.1.dist-info/NOTICE.txt"
+      ]
+    },
+    {
+      "name": "pycparser",
+      "requirements": [
+        "pycparser==2.23"
+      ],
+      "installed_version": "3.0",
+      "declared_license": "BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "pycparser-3.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pydantic",
+      "requirements": [
+        "pydantic==2.12.3"
+      ],
+      "installed_version": "2.13.5",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "pydantic-2.13.5.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pydantic_core",
+      "requirements": [
+        "pydantic_core==2.41.4"
+      ],
+      "installed_version": "2.46.5",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "pydantic_core-2.46.5.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pypdfium2",
+      "requirements": [
+        "pypdfium2==4.30.0"
+      ],
+      "installed_version": "5.13.0",
+      "declared_license": "BSD-3-Clause, Apache-2.0, dependency licenses",
+      "license_metadata_truncated": false,
+      "license_files": []
+    },
+    {
+      "name": "python-dateutil",
+      "requirements": [
+        "python-dateutil==2.9.0.post0"
+      ],
+      "installed_version": "2.9.0.post0",
+      "declared_license": "Dual License",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "python_dateutil-2.9.0.post0.dist-info/LICENSE"
+      ]
+    },
+    {
+      "name": "python-docx",
+      "requirements": [
+        "python-docx==1.2.0"
+      ],
+      "installed_version": "1.2.0",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "python_docx-1.2.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "python-multipart",
+      "requirements": [
+        "python-multipart==0.0.20"
+      ],
+      "installed_version": "0.0.20",
+      "declared_license": "Apache-2.0",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "python_multipart-0.0.20.dist-info/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "pytz",
+      "requirements": [
+        "pytz==2025.2"
+      ],
+      "installed_version": "2026.5",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "pytz-2026.5.dist-info/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "safetensors",
+      "requirements": [
+        "safetensors>=0.4.5,<1"
+      ],
+      "installed_version": null,
+      "declared_license": "UNVERIFIED_NOT_INSTALLED"
+    },
+    {
+      "name": "scikit-learn",
+      "requirements": [
+        "scikit-learn==1.7.2"
+      ],
+      "installed_version": "1.7.2",
+      "declared_license": "BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "scikit_learn-1.7.2.dist-info/licenses/COPYING",
+        "sklearn/externals/array_api_compat/LICENSE",
+        "sklearn/externals/array_api_extra/LICENSE"
+      ]
+    },
+    {
+      "name": "scipy",
+      "requirements": [
+        "scipy==1.13.1"
+      ],
+      "installed_version": "1.13.1",
+      "declared_license": "Copyright (c) 2001-2002 Enthought, Inc. 2003-2024, SciPy Developers.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above\n   copyright notice, this list of conditions and the following\n   disclaim",
+      "license_metadata_truncated": true,
+      "license_files": [
+        "scipy-1.13.1.dist-info/LICENSE.txt",
+        "scipy/_lib/_uarray/LICENSE",
+        "scipy/fft/_pocketfft/LICENSE.md",
+        "scipy/sparse/linalg/_eigen/arpack/COPYING",
+        "scipy/spatial/qhull_src/COPYING.txt"
+      ]
+    },
+    {
+      "name": "six",
+      "requirements": [
+        "six==1.17.0"
+      ],
+      "installed_version": "1.17.0",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "six-1.17.0.dist-info/LICENSE"
+      ]
+    },
+    {
+      "name": "sniffio",
+      "requirements": [
+        "sniffio==1.3.1"
+      ],
+      "installed_version": null,
+      "declared_license": "UNVERIFIED_NOT_INSTALLED"
+    },
+    {
+      "name": "SQLAlchemy",
+      "requirements": [
+        "SQLAlchemy==2.0.44"
+      ],
+      "installed_version": "2.0.44",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "sqlalchemy-2.0.44.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "starlette",
+      "requirements": [
+        "starlette==0.48.0"
+      ],
+      "installed_version": "0.48.0",
+      "declared_license": "BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "starlette-0.48.0.dist-info/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "threadpoolctl",
+      "requirements": [
+        "threadpoolctl==3.6.0"
+      ],
+      "installed_version": "3.6.0",
+      "declared_license": "BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "threadpoolctl-3.6.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "torch",
+      "requirements": [
+        "torch>=2.4,<3"
+      ],
+      "installed_version": null,
+      "declared_license": "UNVERIFIED_NOT_INSTALLED"
+    },
+    {
+      "name": "transformers",
+      "requirements": [
+        "transformers>=4.45,<5"
+      ],
+      "installed_version": null,
+      "declared_license": "UNVERIFIED_NOT_INSTALLED"
+    },
+    {
+      "name": "typing-inspection",
+      "requirements": [
+        "typing-inspection==0.4.2"
+      ],
+      "installed_version": "0.4.4",
+      "declared_license": "MIT",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "typing_inspection-0.4.4.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "requirements": [
+        "typing_extensions==4.15.0"
+      ],
+      "installed_version": "4.16.0",
+      "declared_license": "PSF-2.0",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "tzdata",
+      "requirements": [
+        "tzdata==2025.2"
+      ],
+      "installed_version": "2026.4",
+      "declared_license": "Apache-2.0",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "tzdata-2026.4.dist-info/licenses/LICENSE",
+        "tzdata-2026.4.dist-info/licenses/licenses/LICENSE_APACHE"
+      ]
+    },
+    {
+      "name": "uvicorn",
+      "requirements": [
+        "uvicorn==0.38.0"
+      ],
+      "installed_version": "0.38.0",
+      "declared_license": "BSD-3-Clause",
+      "license_metadata_truncated": false,
+      "license_files": [
+        "uvicorn-0.38.0.dist-info/licenses/LICENSE.md"
+      ]
+    }
+  ],
+  "local_artifacts": [
+    {
+      "path": "backend/models/ml_classifier.joblib",
+      "bytes": 18035088,
+      "sha256": "ca7d72042441ff34146b606cf0fc4df17f73236d660986119fd20042de312def",
+      "git_ignored": true
+    },
+    {
+      "path": "backend/models/ml_classifier.meta.json",
+      "bytes": 1705,
+      "sha256": "ca875ec31b67671bcdd4a2f72c89b3d90b851f53f822f0c9e85dd106d8ccb4bf",
+      "git_ignored": true
+    },
+    {
+      "path": "backend/data/uzbek_public/source-manifest.json",
+      "bytes": 1101,
+      "sha256": "c614daecd17ce23bc3d1d50752eebb4da0ce191ef32ead499e49b22af3bc90ca",
+      "git_ignored": true
+    },
+    {
+      "path": "backend/data/uzbek_public/source-card.md",
+      "bytes": 3377,
+      "sha256": "404d78a82ce0665b7b16f8ea5643590deb8a9e8ce3d6614d44e2edf458f8a67c",
+      "git_ignored": true
+    }
+  ],
+  "model_hash_matches_training_report": true
+}

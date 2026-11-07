@@ -1,6 +1,7 @@
 import io
 import os
 from contextlib import asynccontextmanager
+from urllib.parse import quote
 
 from fastapi import FastAPI, UploadFile, File, Form, Depends, HTTPException
 from sqlalchemy.orm import Session
@@ -10,7 +11,8 @@ from starlette.responses import StreamingResponse
 
 from models import Database, Document, Classification, ClassifyRequest
 from database import get_db
-from nlp.classifier import classify_text
+from nlp.classifier import DICTIONARY_VERSION, classify_text
+from nlp.structural import STRUCTURAL_VERSION, classify_structural
 from nlp.loader import load_database, load_document
 from nlp.reference_db import ReferenceDBError
 from storage import max_upload_bytes, safe_stored_name, save_upload_file
@@ -161,7 +163,7 @@ def get_document(id: int, db: Session = Depends(get_db)):
     return StreamingResponse(
         io.StringIO(doc_entry.text_content),
         media_type="text/plain",
-        headers={"Content-Disposition": f"attachment; filename={filename}"},
+        headers={"Content-Disposition": f"attachment; filename*=utf-8''{quote(filename, safe='')}"},
     )
 
 
@@ -191,7 +193,7 @@ def _find_cached_classification(db: Session, request: ClassifyRequest):
         Classification.document_id == request.document_id,
         Classification.classifier_method == request.method,
     )
-    if request.method == "dictionary":
+    if request.method != "ml":
         q = q.filter(Classification.database_id == request.database_id)
     else:
         q = q.filter(Classification.database_id == -1)
@@ -202,7 +204,10 @@ def _find_cached_classification(db: Session, request: ClassifyRequest):
 def create_classification(request: ClassifyRequest, db: Session = Depends(get_db)):
     existing = _find_cached_classification(db, request)
 
-    if existing and not request.force_recompute:
+    versions = {"dictionary": DICTIONARY_VERSION, "structural": STRUCTURAL_VERSION}
+    outdated = (existing and request.method in versions
+                and existing.result.get("classifier_version") != versions[request.method])
+    if existing and not request.force_recompute and not outdated:
         return {
             "classification_id": existing.id,
             "document_id": existing.document_id,
@@ -211,15 +216,11 @@ def create_classification(request: ClassifyRequest, db: Session = Depends(get_db
             "classification_result": existing.result,
         }
 
-    if existing and request.force_recompute:
-        db.delete(existing)
-        db.commit()
-
     doc_entry = db.query(Document).filter(Document.id == request.document_id).first()
     if not doc_entry:
         raise HTTPException(status_code=404, detail="Document not found")
 
-    if request.method == "dictionary":
+    if request.method != "ml":
         db_entry = db.query(Database).filter(Database.id == request.database_id).first()
         if not db_entry:
             raise HTTPException(status_code=404, detail="Database not found")
@@ -228,7 +229,11 @@ def create_classification(request: ClassifyRequest, db: Session = Depends(get_db
         except ReferenceDBError as e:
             raise HTTPException(status_code=400, detail=str(e)) from e
         text = _load_document_text(doc_entry)
-        result = classify_text(text, tables_df, keys_df)
+        try:
+            classifier = classify_structural if request.method == "structural" else classify_text
+            result = classifier(text, tables_df, keys_df)
+        except ValueError as e:
+            raise HTTPException(status_code=400, detail=str(e)) from e
     else:
         if not ml_status()["available"]:
             raise HTTPException(
@@ -246,12 +251,17 @@ def create_classification(request: ClassifyRequest, db: Session = Depends(get_db
         except RuntimeError as e:
             raise HTTPException(status_code=503, detail=str(e)) from e
 
-    classif = Classification(
-        document_id=request.document_id,
-        database_id=request.database_id,
-        classifier_method=request.method,
-        result=result,
-    )
+    # Старый результат сохраняется, если пересчёт завершился ошибкой.
+    if existing:
+        classif = existing
+        classif.result = result
+    else:
+        classif = Classification(
+            document_id=request.document_id,
+            database_id=request.database_id,
+            classifier_method=request.method,
+            result=result,
+        )
     db.add(classif)
     db.commit()
     db.refresh(classif)

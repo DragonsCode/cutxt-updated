@@ -1,0 +1,306 @@
+{
+  "version": "uzbek-topics-1.0",
+  "backend": "sklearn",
+  "calibrated": true,
+  "calibration_method": "sigmoid on separate 10% holdout",
+  "normalization": "uzbek-latin-v1",
+  "algorithm": "word/character TF-IDF + LinearSVC",
+  "seed": 42,
+  "train_samples": 77428,
+  "calibration_samples": 9678,
+  "test_samples": 9679,
+  "num_labels": 10,
+  "label_names": [
+    "Ekologiya",
+    "Iqtisodiyot",
+    "Madaniyat",
+    "Oila va Jamiyat",
+    "Salomatlik",
+    "Siyosat",
+    "Sport",
+    "Ta'lim",
+    "Texnologiya",
+    "Xorijiy Yangiliklar"
+  ],
+  "scripts": [
+    "Latin",
+    "Cyrillic (transliterated)"
+  ],
+  "dataset": "risqaliyevds/uzbek-zero-shot-classification",
+  "dataset_revision": "a4ad4607a7c1ffe492fe1420a05fb6c7b6165383",
+  "test_metrics": {
+    "accuracy": 0.844715363157351,
+    "macro_f1": 0.8188134983622746,
+    "weighted_f1": 0.8446468642941054,
+    "log_loss": 0.41719802041217324,
+    "majority_baseline_accuracy": 0.30478355201983676
+  },
+  "limitations": [
+    "News topics; quality on administrative, scientific or internal documents has not been measured.",
+    "Random stratified holdout, not a chronological or independent-source evaluation.",
+    "Lead deduplication does not guarantee removal of every paraphrase or repeated news event.",
+    "Cyrillic is transliterated; there is no independently labelled natural-Cyrillic test corpus.",
+    "Always selects one of ten topics; no trained out-of-domain or Other class."
+  ],
+  "trained_at": "2026-10-08T10:54:20.147901+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "scikit_learn": "1.7.2",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "joblib": "1.5.2"
+  },
+  "cleaning": {
+    "source_rows": 96970,
+    "invalid_or_short_rows_removed": 0,
+    "conflicting_label_rows_removed": 20,
+    "duplicate_or_repeated_lead_rows_removed": 165,
+    "retained_rows": 96785,
+    "label_counts": {
+      "Ekologiya": 1779,
+      "Iqtisodiyot": 10687,
+      "Madaniyat": 2403,
+      "Oila va Jamiyat": 13981,
+      "Salomatlik": 3440,
+      "Siyosat": 29492,
+      "Sport": 16110,
+      "Ta'lim": 1986,
+      "Texnologiya": 5176,
+      "Xorijiy Yangiliklar": 11731
+    }
+  },
+  "source": {
+    "dataset_id": "risqaliyevds/uzbek-zero-shot-classification",
+    "revision": "a4ad4607a7c1ffe492fe1420a05fb6c7b6165383",
+    "source": "https://huggingface.co/datasets/risqaliyevds/uzbek-zero-shot-classification",
+    "downloaded_at": "2026-10-08T10:42:14.210980+00:00",
+    "declared_license": "MIT (publisher's dataset card)",
+    "provenance_limit": "News-derived corpus; original article rights are not independently verified.",
+    "files": [
+      {
+        "url": "https://huggingface.co/datasets/risqaliyevds/uzbek-zero-shot-classification/resolve/a4ad4607a7c1ffe492fe1420a05fb6c7b6165383/README.md",
+        "filename": "source-card.md",
+        "bytes": 3377,
+        "sha256": "404d78a82ce0665b7b16f8ea5643590deb8a9e8ce3d6614d44e2edf458f8a67c"
+      },
+      {
+        "url": "https://huggingface.co/datasets/risqaliyevds/uzbek-zero-shot-classification/resolve/a4ad4607a7c1ffe492fe1420a05fb6c7b6165383/data/train-00000-of-00001.parquet",
+        "filename": "source.parquet",
+        "bytes": 41718122,
+        "sha256": "f0fb57073498b22f94c6fa4e9db608d1d9d3d5de3435deb8e8f86a86a835cf77"
+      }
+    ]
+  },
+  "model_sha256": "ca7d72042441ff34146b606cf0fc4df17f73236d660986119fd20042de312def",
+  "split_manifest_sha256": "488119645b5563ec3cbcb21c6975c0de7d017f4a44c0b482b218312adaccef4d",
+  "labels": [
+    "Ekologiya",
+    "Iqtisodiyot",
+    "Madaniyat",
+    "Oila va Jamiyat",
+    "Salomatlik",
+    "Siyosat",
+    "Sport",
+    "Ta'lim",
+    "Texnologiya",
+    "Xorijiy Yangiliklar"
+  ],
+  "per_class": {
+    "Ekologiya": {
+      "precision": 0.8333333333333334,
+      "recall": 0.7584269662921348,
+      "f1-score": 0.7941176470588235,
+      "support": 178.0
+    },
+    "Iqtisodiyot": {
+      "precision": 0.8382213812677389,
+      "recall": 0.8288119738072965,
+      "f1-score": 0.8334901222953904,
+      "support": 1069.0
+    },
+    "Madaniyat": {
+      "precision": 0.7510917030567685,
+      "recall": 0.7166666666666667,
+      "f1-score": 0.7334754797441365,
+      "support": 240.0
+    },
+    "Oila va Jamiyat": {
+      "precision": 0.7556980056980057,
+      "recall": 0.7589413447782547,
+      "f1-score": 0.7573162027123483,
+      "support": 1398.0
+    },
+    "Salomatlik": {
+      "precision": 0.8507936507936508,
+      "recall": 0.7790697674418605,
+      "f1-score": 0.8133535660091047,
+      "support": 344.0
+    },
+    "Siyosat": {
+      "precision": 0.8692637834268736,
+      "recall": 0.892542372881356,
+      "f1-score": 0.8807492891787925,
+      "support": 2950.0
+    },
+    "Sport": {
+      "precision": 0.9811794228356336,
+      "recall": 0.9708255741775295,
+      "f1-score": 0.97597503900156,
+      "support": 1611.0
+    },
+    "Ta'lim": {
+      "precision": 0.8440860215053764,
+      "recall": 0.7929292929292929,
+      "f1-score": 0.8177083333333334,
+      "support": 198.0
+    },
+    "Texnologiya": {
+      "precision": 0.859375,
+      "recall": 0.8494208494208494,
+      "f1-score": 0.8543689320388349,
+      "support": 518.0
+    },
+    "Xorijiy Yangiliklar": {
+      "precision": 0.7220822837951302,
+      "recall": 0.7331628303495311,
+      "f1-score": 0.727580372250423,
+      "support": 1173.0
+    },
+    "accuracy": 0.844715363157351,
+    "macro avg": {
+      "precision": 0.8305124585712511,
+      "recall": 0.8080797638744771,
+      "f1-score": 0.8188134983622746,
+      "support": 9679.0
+    },
+    "weighted avg": {
+      "precision": 0.8449311745973999,
+      "recall": 0.844715363157351,
+      "f1-score": 0.8446468642941054,
+      "support": 9679.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      135,
+      3,
+      0,
+      9,
+      1,
+      3,
+      0,
+      1,
+      3,
+      23
+    ],
+    [
+      2,
+      886,
+      4,
+      50,
+      1,
+      73,
+      5,
+      3,
+      27,
+      18
+    ],
+    [
+      4,
+      3,
+      172,
+      36,
+      2,
+      11,
+      1,
+      3,
+      1,
+      7
+    ],
+    [
+      10,
+      39,
+      22,
+      1061,
+      14,
+      108,
+      5,
+      10,
+      9,
+      120
+    ],
+    [
+      1,
+      3,
+      2,
+      25,
+      268,
+      15,
+      0,
+      2,
+      7,
+      21
+    ],
+    [
+      1,
+      60,
+      7,
+      86,
+      15,
+      2633,
+      14,
+      7,
+      8,
+      119
+    ],
+    [
+      0,
+      3,
+      9,
+      18,
+      1,
+      2,
+      1564,
+      1,
+      5,
+      8
+    ],
+    [
+      0,
+      4,
+      1,
+      21,
+      1,
+      9,
+      0,
+      157,
+      2,
+      3
+    ],
+    [
+      3,
+      33,
+      0,
+      14,
+      3,
+      10,
+      2,
+      1,
+      440,
+      12
+    ],
+    [
+      6,
+      23,
+      12,
+      84,
+      9,
+      165,
+      3,
+      1,
+      10,
+      860
+    ]
+  ],
+  "training_seconds": 435.06
+}

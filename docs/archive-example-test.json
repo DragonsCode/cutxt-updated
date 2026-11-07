@@ -1,0 +1,2073 @@
+{
+  "sources": {
+    "farmoni.docx": {
+      "bytes": 74120,
+      "sha256": "8e301bfe332b0662a977baa47754559955930af56cb22a3b048e9f3d829f2942"
+    },
+    "database.sqlite": {
+      "bytes": 32768,
+      "sha256": "8279894c81b5135ff51482c8bbe7d92cd9456a8d94080b5b68828c9e1dd6cbd9"
+    }
+  },
+  "structural": {
+    "classification_id": 4,
+    "document_id": 2,
+    "database_id": 1,
+    "classifier_method": "structural",
+    "classification_result": {
+      "predicted_category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+      "predicted_category_id": 1,
+      "relative_score_share": 0.7335716243336315,
+      "confidence": 0.7335716243336315,
+      "margin_raw": 6.668659763280451,
+      "margin_share": 0.5187464139867,
+      "runner_up_category_id": 2,
+      "runner_up_category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+      "runner_up_raw": 2.761650389771316,
+      "runner_up_share": 0.21482521034693164,
+      "only_one_scoring_class": false,
+      "all_scores": {
+        "1": 9.430310153051767,
+        "2": 2.761650389771316,
+        "3": 0.17727830860322544,
+        "4": 0.4860977513466765
+      },
+      "all_scores_by_name": {
+        "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)": 9.430310153051767,
+        "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)": 2.761650389771316,
+        "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)": 0.17727830860322544,
+        "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)": 0.4860977513466765
+      },
+      "score_shares": {
+        "1": 0.7335716243336315,
+        "2": 0.21482521034693164,
+        "3": 0.013790250234675713,
+        "4": 0.03781291508476113
+      },
+      "score_shares_by_name": {
+        "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)": 0.7335716243336315,
+        "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)": 0.21482521034693164,
+        "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)": 0.013790250234675713,
+        "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)": 0.03781291508476113
+      },
+      "classification_kind": "structural",
+      "classifier_version": "archive-1.0",
+      "matching": "Uzbek Latin/Cyrillic, phrases, document zones and bounded suffix rules",
+      "scoring": {
+        "zone_weights": {
+          "header": 3.0,
+          "body": 1.0,
+          "appendix": 0.25
+        },
+        "header_lines": 3,
+        "header_words": 160,
+        "review_margin": 0.1,
+        "repetitions": "log2(1 + count)",
+        "category_normalization": "sqrt(distinct positive keys)"
+      },
+      "needs_review": false,
+      "review_reasons": [],
+      "matched_keyword_rows": 67,
+      "matched_keywords": [
+        {
+          "key": "O'zbekiston Respublikasi Prezidenti",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 11,
+          "score": 4.294882279955511,
+          "zones": {
+            "header": 1,
+            "body": 5,
+            "appendix": 5
+          },
+          "zone_scores": {
+            "header": 2.0677622891650733,
+            "body": 1.7816959926323497,
+            "appendix": 0.4454239981580874
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "header": "o'zbekiston respublikasi prezidentining farmoni o'zbekiston respublikasi xalq ta'limi tizimini 2030 yilgacha",
+            "body": "innovatsion shakllari va usullarini joriy etish maqsadida shuningdek o'zbekiston respublikasi prezidentining 2018 yil 5 sentyabrdagi xalq ta'limini boshqarish tizimini",
+            "appendix": "tizimini 2030 yilgacha rivojlantirish kontseptsiyasi keyingi o'rinlarda kontseptsiya o'zbekiston respublikasi prezidentining 2018 yil 5 sentyabrdagi xalq ta'limini boshqarish tizimini"
+          }
+        },
+        {
+          "key": "prezident",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 13,
+          "score": 2.3920851058766814,
+          "zones": {
+            "header": 1,
+            "body": 5,
+            "appendix": 7
+          },
+          "zone_scores": {
+            "header": 1.1328015464674208,
+            "body": 0.9760831727924056,
+            "appendix": 0.2832003866168552
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "header": "o'zbekiston respublikasi prezidentining farmoni o'zbekiston respublikasi xalq ta'limi tizimini 2030 yilgacha",
+            "body": "va usullarini joriy etish maqsadida shuningdek o'zbekiston respublikasi prezidentining 2018 yil 5 sentyabrdagi xalq ta'limini boshqarish tizimini",
+            "appendix": "yilgacha rivojlantirish kontseptsiyasi keyingi o'rinlarda kontseptsiya o'zbekiston respublikasi prezidentining 2018 yil 5 sentyabrdagi xalq ta'limini boshqarish tizimini"
+          }
+        },
+        {
+          "key": "Ахборот",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 38,
+          "score": 2.0868187479136147,
+          "zones": {
+            "header": 0,
+            "body": 4,
+            "appendix": 34
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 1.344369737649078,
+            "appendix": 0.7424490102645369
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "body": "xalq ta'limi sohasiga zamonaviy axborot kommunikatsiya texnologiyalari va innovatsion loyihalarni joriy etish",
+            "appendix": "xalq ta'limi sohasiga zamonaviy axborot kommunikatsiya texnologiyalari va innovatsion loyihalarni joriy etish"
+          }
+        },
+        {
+          "key": "Vazir",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 19,
+          "score": 1.1508323525020445,
+          "zones": {
+            "header": 0,
+            "body": 7,
+            "appendix": 12
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.879592449507498,
+            "appendix": 0.27123990299454653
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "yo'l xarita si loyihasini ishlab chiqib tasdiqlash uchun vazirlar mahkamasiga kiritish",
+            "appendix": "qoraqalpog'iston respublikasi vazirlar kengashi viloyatlar va toshkent shahar hokimliklari moliya vazirligi"
+          }
+        },
+        {
+          "key": "mahkama",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 3,
+          "score": 0.7898001923456359,
+          "zones": {
+            "header": 0,
+            "body": 3,
+            "appendix": 0
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.7898001923456359,
+            "appendix": 0.0
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "xarita si loyihasini ishlab chiqib tasdiqlash uchun vazirlar mahkamasiga kiritish"
+          }
+        },
+        {
+          "key": "Oliy ta'lim",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 12,
+          "score": 0.5460257989231937,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 12
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.5460257989231937
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "appendix": "oliy ta'lim muassasalariga qabul qilish jarayoniga uzoq hududlardagi talabalar uchun"
+          }
+        },
+        {
+          "key": "farmon",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 12,
+          "score": 0.27934467024113313,
+          "zones": {
+            "header": 1,
+            "body": 6,
+            "appendix": 5
+          },
+          "zone_scores": {
+            "header": 0.12985536583278354,
+            "body": 0.12151670014208521,
+            "appendix": 0.02797260426626439
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "header": "o'zbekiston respublikasi prezidentining farmoni o'zbekiston respublikasi xalq ta'limi tizimini 2030 yilgacha rivojlantirish",
+            "body": "qo'shimcha chora tadbirlar to'g'risida gi pf 5538 son farmoniga muvofiq",
+            "appendix": "qo'shimcha chora tadbirlar to'g'risida gi pf 5538 son farmoni ijrosi yuzasidan ishlab chiqilgan"
+          }
+        },
+        {
+          "key": "talabalar",
+          "category_id": 3,
+          "category": "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)",
+          "occurrences": 1,
+          "score": 0.17727830860322544,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.17727830860322544
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "appendix": "oliy ta'lim muassasalariga qabul qilish jarayoniga uzoq hududlardagi talabalar uchun o'qishga kirishda imtiyozlarning yo'qligi sababli tog va"
+          }
+        },
+        {
+          "key": "amaliyot",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 12,
+          "score": 0.1764764104626727,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 11
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.09306646430797454,
+            "appendix": 0.08340994615469817
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "kompleks chora tadbirlarni o'z ichiga olgan beshta tashabbusni amaliyotga tatbiq etish",
+            "appendix": "kompleks chora tadbirlarni o'z ichiga olgan beshta tashabbusni amaliyotga tatbiq etish"
+          }
+        },
+        {
+          "key": "qaror",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 2,
+          "score": 0.17206408323726743,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.17206408323726743
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "appendix": "axborot kommunikatsiya texnologiyalaridan foydalanish darajasi pastligi qabul qilinayotgan qarorlarning samarali amalga oshirilishini ta'minlash ushbu jarayonni tezkor kuzatib"
+          }
+        },
+        {
+          "key": "davlat",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 41,
+          "score": 0.10801374740253677,
+          "zones": {
+            "header": 0,
+            "body": 2,
+            "appendix": 39
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.058720972997452506,
+            "appendix": 0.049292774405084276
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "davlat xususiy sheriklikni rivojlantirish hisobiga davlat ta'lim tizimida raqobat",
+            "appendix": "davlat xususiy sheriklikni rivojlantirish hisobiga davlat ta'lim tizimida raqobat"
+          }
+        },
+        {
+          "key": "axborot texnologiyalari",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 5,
+          "score": 0.09495547039224381,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 5
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.09495547039224381
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "axborot texnologiyalari sohasidagi tashkilotlarning o'quv jarayonlariga qatnashishini rag'batlantirish orqali umumta'lim"
+          }
+        },
+        {
+          "key": "rivojlantirish",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 35,
+          "score": 0.08816804938114402,
+          "zones": {
+            "header": 1,
+            "body": 4,
+            "appendix": 30
+          },
+          "zone_scores": {
+            "header": 0.040317821583590596,
+            "body": 0.03120502755319836,
+            "appendix": 0.016645200244355066
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "header": "farmoni o'zbekiston respublikasi xalq ta'limi tizimini 2030 yilgacha rivojlantirish kontseptsiyasini tasdiqlash to'g'risida",
+            "body": "o'sib kelayotgan yosh avlodni ma'naviy axloqiy va intellektual rivojlantirishni sifat jihatidan yangi darajaga ko'tarish o'quv tarbiya jarayoniga",
+            "appendix": "o'zbekiston respublikasi xalq ta'limi tizimini 2030 yilgacha rivojlantirish"
+          }
+        },
+        {
+          "key": "o'zlashtirish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 4,
+          "score": 0.08152062953132853,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 4
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.08152062953132853
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "ta'lim berishning zamonaviy nazariyalarini o'zlashtirishni pedagogik psixologiyani tushunish ta'lim berishga kompetentlik hamda shaxsga"
+          }
+        },
+        {
+          "key": "илова",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 8,
+          "score": 0.054829332879537056,
+          "zones": {
+            "header": 0,
+            "body": 2,
+            "appendix": 6
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.038001744693250156,
+            "appendix": 0.0168275881862869
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "2030 yilgacha rivojlantirish kontseptsiyasi keyingi o'rinlarda kontseptsiya 1 ilovaga muvofiq tasdiqlansin va unda quyidagilar nazarda tutilsin",
+            "appendix": "1 ilova"
+          }
+        },
+        {
+          "key": "Oliy va o'rta maxsus ta'lim vazirligi",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 2,
+          "score": 0.05366913066327434,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.05366913066327434
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "xalq ta'limi vazirligi oliy va o'rta maxsus ta'lim vazirligi"
+          }
+        },
+        {
+          "key": "maktab",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 107,
+          "score": 0.03987930800011846,
+          "zones": {
+            "header": 0,
+            "body": 2,
+            "appendix": 105
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.019347510867509233,
+            "appendix": 0.02053179713260923
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "o'zbekiston respublikasida umumiy o'rta va maktabdan tashqari ta'limni tizimli isloh qilishning ustuvor yo'nalishlarini belgilash",
+            "appendix": "yoshlarni tarbiyalash va ularning bandligini ta'minlashda maktabdan tashqari ta'limning zamonaviy usullari va yo'nalishlarini joriy etish"
+          }
+        },
+        {
+          "key": "talaba,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.035109024138528774,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.035109024138528774
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "oliy ta'lim muassasalariga qabul qilish jarayoniga uzoq hududlardagi talabalar uchun o'qishga kirishda imtiyozlarning yo'qligi sababli tog va"
+          }
+        },
+        {
+          "key": "yoshlar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 19,
+          "score": 0.0284202384476275,
+          "zones": {
+            "header": 0,
+            "body": 2,
+            "appendix": 17
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.017144044352042906,
+            "appendix": 0.011276194095584596
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "yoshlarni tarbiyalash va ularning bandligini ta'minlashda maktabdan tashqari ta'limning",
+            "appendix": "yoshlarni tarbiyalash va ularning bandligini ta'minlashda maktabdan tashqari ta'limning"
+          }
+        },
+        {
+          "key": "o'quvchilar,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 57,
+          "score": 0.021505250365611087,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 56
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.008748292855765399,
+            "appendix": 0.012756957509845686
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "the programme for international student assessment xalqaro miqyosda o'quvchilarni baholash dasturi reytingi bo'yicha jahonning birinchi 30 ta",
+            "appendix": "the programme for international student assessment xalqaro miqyosda o'quvchilarni baholash dasturi reytingi bo'yicha jahonning birinchi 30 ta"
+          }
+        },
+        {
+          "key": "ijtimoiy",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 5,
+          "score": 0.020826667485364214,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 4
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.013177414973895102,
+            "appendix": 0.007649252511469114
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "muassasalari xodimlarining mehnatiga haq to'lash moddiy rag'batlantirish va ijtimoiy himoya qilish darajasini bosqichma bosqich oshirib borish",
+            "appendix": "muassasalari xodimlarining mehnatiga haq to'lash moddiy rag'batlantirish va ijtimoiy himoya qilish darajasini bosqichma bosqich oshirib borish"
+          }
+        },
+        {
+          "key": "farmon",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 12,
+          "score": 0.020307379391696464,
+          "zones": {
+            "header": 1,
+            "body": 6,
+            "appendix": 5
+          },
+          "zone_scores": {
+            "header": 0.009440030403077207,
+            "body": 0.008833838605484074,
+            "appendix": 0.0020335103831351834
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "header": "o'zbekiston respublikasi prezidentining farmoni o'zbekiston respublikasi xalq ta'limi tizimini 2030 yilgacha rivojlantirish",
+            "body": "qo'shimcha chora tadbirlar to'g'risida gi pf 5538 son farmoniga muvofiq",
+            "appendix": "qo'shimcha chora tadbirlar to'g'risida gi pf 5538 son farmoni ijrosi yuzasidan ishlab chiqilgan"
+          }
+        },
+        {
+          "key": "muvofiq",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 5,
+          "score": 0.020241190445709295,
+          "zones": {
+            "header": 0,
+            "body": 3,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.016894121761403976,
+            "appendix": 0.003347068684305319
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "chora tadbirlar to'g'risida gi pf 5538 son farmoniga muvofiq",
+            "appendix": "rivojlanishi ilg'or xalqaro tajriba va jamiyatning zamonaviy talablariga muvofiq sifatli ta'lim olish imkoniyatlarini yaratish"
+          }
+        },
+        {
+          "key": "mavzu",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.016971009977947996,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 0
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.016971009977947996,
+            "appendix": 0.0
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "maqsad va vazifalarini keng yoritish bo'yicha chiqishlar hamda mavzuga oid ko'rsatuvlar tashkil etsin"
+          }
+        },
+        {
+          "key": "teatr",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 0.01467186240786117,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.01467186240786117
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "umumta'lim maktablarida yoshlar teatr studiyalarini tashkil etish"
+          }
+        },
+        {
+          "key": "hokim",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 1,
+          "score": 0.013228097339179314,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 0
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.013228097339179314,
+            "appendix": 0.0
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "respublikasi vazirlar kengashi raisi viloyatlar va toshkent shahar hokimlari mas'ul vazirliklar idoralar va boshqa tashkilotlar rahbarlariga kontseptsiya"
+          }
+        },
+        {
+          "key": "Ta'lim sohasi",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 9,
+          "score": 0.009283184497635641,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 8
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.005178957657586779,
+            "appendix": 0.004104226840048861
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "xalq ta'limi sohasiga zamonaviy axborot kommunikatsiya texnologiyalari va innovatsion loyihalarni joriy",
+            "appendix": "xalq ta'limi sohasiga zamonaviy axborot kommunikatsiya texnologiyalari va innovatsion loyihalarni joriy"
+          }
+        },
+        {
+          "key": "O'zbekiston Respublikasi",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 36,
+          "score": 0.0074283070051865754,
+          "zones": {
+            "header": 2,
+            "body": 15,
+            "appendix": 19
+          },
+          "zone_scores": {
+            "header": 0.003591198485042754,
+            "body": 0.003021058633592288,
+            "appendix": 0.0008160498865515336
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "header": "o'zbekiston respublikasi prezidentining farmoni o'zbekiston respublikasi xalq ta'limi tizimini 2030",
+            "body": "o'zbekiston respublikasida umumiy o'rta va maktabdan tashqari ta'limni tizimli isloh",
+            "appendix": "o'zbekiston respublikasi xalq ta'limi tizimini 2030 yilgacha rivojlantirish"
+          }
+        },
+        {
+          "key": "axborot",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 38,
+          "score": 0.007131081955573107,
+          "zones": {
+            "header": 0,
+            "body": 4,
+            "appendix": 34
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.004593983443628111,
+            "appendix": 0.0025370985119449957
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "body": "xalq ta'limi sohasiga zamonaviy axborot kommunikatsiya texnologiyalari va innovatsion loyihalarni joriy etish",
+            "appendix": "xalq ta'limi sohasiga zamonaviy axborot kommunikatsiya texnologiyalari va innovatsion loyihalarni joriy etish"
+          }
+        },
+        {
+          "key": "reja",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 4,
+          "score": 0.0068890672843376225,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 4
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0068890672843376225
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "o'zgaruvchan o'quv rejalarini"
+          }
+        },
+        {
+          "key": "o'rta ta'lim",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 4,
+          "score": 0.006473697071983473,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 3
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.004315798047988982,
+            "appendix": 0.002157899023994491
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "ta'limi tizimida faoliyat ko'rsatishning jozibadorligini oshirish maqsadida umumiy o'rta ta'lim muassasalari xodimlarining mehnatiga haq to'lash moddiy rag'batlantirish va",
+            "appendix": "ta'limi tizimida faoliyat ko'rsatishning jozibadorligini oshirish maqsadida umumiy o'rta ta'lim muassasalari xodimlarining mehnatiga haq to'lash moddiy rag'batlantirish va"
+          }
+        },
+        {
+          "key": "kamchilik",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 0.0060398824222217505,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0048319059377774,
+            "appendix": 0.00120797648444435
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "xarita lari bajarilishi yuzasidan o'tkazilgan monitoring natijasida aniqlangan kamchiliklarni o'z vaqtida bartaraf etish yuzasidan",
+            "appendix": "mos ravishda ta'lim tarbiya berishda ayrim bo'shliq va kamchiliklar mavjud shu jumladan"
+          }
+        },
+        {
+          "key": "iqtisodiyot",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 5,
+          "score": 0.005868246447316877,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 5
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.005868246447316877
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "umumta'lim tizimida iqtisodiyotning innovatsion rivojlanishi ilg'or xalqaro tajriba va jamiyatning zamonaviy"
+          }
+        },
+        {
+          "key": "Sonli",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 0.004984492441075635,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 3
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.004984492441075635
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "respublikasi prezidentining 2021 yil 24 iyuldagi pf 6268 sonli farmoniga asosan xatboshilar bilan to'ldirilgan qonunchilik ma'lumotlari milliy"
+          }
+        },
+        {
+          "key": "pedagog,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 25,
+          "score": 0.003974614452243868,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 25
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.003974614452243868
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "tili va boshqa chet tillari kabi fanlar bo'yicha pedagog kadrlar yetishmovchiligi kuzatilmoqda"
+          }
+        },
+        {
+          "key": "lavozim",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 0.0031909957159954464,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0031909957159954464
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "imtihonlarni muvaffaqiyatli topshirgan barcha tinglovchilarga ta'lim muassasalari rahbarlari lavozimlarini egallash imkonini beruvchi uch yil muddatli maxsus sertifikat"
+          }
+        },
+        {
+          "key": "Ma'naviy",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 0.00232411849931106,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0018592947994488479,
+            "appendix": 0.00046482369986221197
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "qilishning ustuvor yo'nalishlarini belgilash o'sib kelayotgan yosh avlodni ma'naviy axloqiy va intellektual rivojlantirishni sifat jihatidan yangi darajaga",
+            "appendix": "g o'quvchilarni ma'naviy axloqiy tarbiyalashni ta'minlash bolaning jismonan sog'lom va baquvvat"
+          }
+        },
+        {
+          "key": "sinf",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 20,
+          "score": 0.002010625070753162,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 20
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.002010625070753162
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "ayrim maktablarda o'quvchilar soni sinfda o'quv jarayoni sifatining keskin pasayishiga olib keladigan darajada"
+          }
+        },
+        {
+          "key": "o'tkazish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 10,
+          "score": 0.0019794846528270525,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 10
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0019794846528270525
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "oliy ta'lim muassasalarini ta'limning kredit tizimiga bosqichma bosqich o'tkazish pedagogika didaktika amaliy pedagogik psixologiya metodika kabi fanlarga"
+          }
+        },
+        {
+          "key": "курс",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 6,
+          "score": 0.0014873766356731082,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 6
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0014873766356731082
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "oshirish tizimi o'qituvchilar ehtiyojlariga mos emasligi malaka oshirish kurslari mazmuni va qo'llaniladigan usullar eskirganligi zamonaviy axborot kommunikatsiya"
+          }
+        },
+        {
+          "key": "tuman,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.001475002865216259,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.001475002865216259
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "tizimida boshqaruv vertikalini amalga oshirish mexanizmining yetarlicha rivojlanmaganligi tuman shahar xalq ta'limi bo'limlari rolining sezilarli darajada pasayishiga"
+          }
+        },
+        {
+          "key": "sertifikat",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 0.0010849385434384517,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0010849385434384517
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "lavozimlarini egallash imkonini beruvchi uch yil muddatli maxsus sertifikat berish tizimini yaratish"
+          }
+        },
+        {
+          "key": "madaniy",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.0009960507854190257,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0009960507854190257
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "xalq ta'limi vazirligi turizm va madaniy meros vazirligi"
+          }
+        },
+        {
+          "key": "faoliyat",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 17,
+          "score": 0.0007304266465594429,
+          "zones": {
+            "header": 0,
+            "body": 2,
+            "appendix": 15
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0004478590478590101,
+            "appendix": 0.00028256759870043277
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "xalq ta'limi tizimida faoliyat ko'rsatishning jozibadorligini oshirish maqsadida umumiy o'rta ta'lim muassasalari",
+            "appendix": "xalq ta'limi tizimida faoliyat ko'rsatishning jozibadorligini oshirish maqsadida umumiy o'rta ta'lim muassasalari"
+          }
+        },
+        {
+          "key": "taqdim etish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.0005244893461097722,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0005244893461097722
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "va ochiqligini ta'minlash jismoniy va yuridik shaxslarga axborot taqdim etishning zamonaviy shakllarini joriy qilish orqali jamiyat va biznes"
+          }
+        },
+        {
+          "key": "vazifa",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 5,
+          "score": 0.00047131427776738117,
+          "zones": {
+            "header": 0,
+            "body": 2,
+            "appendix": 3
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.00035828723828720805,
+            "appendix": 0.00011302703948017313
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "natijalarini har chorakda vazirlar mahkamasiga taqdim etib borish vazifalari yuklansin",
+            "appendix": "umumta'lim muassasalariga yuklatilgan vazifalarning deklarativ xarakterga egaligi ularni amalga oshirish bo'yicha tashkiliy"
+          }
+        },
+        {
+          "key": "korxona",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.0002818611797036817,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0002818611797036817
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "sanoat korxonalari ilmiy muassasalar tashkilotlar hamda xo'jalik yurituvchi sub'yektlarning maktabdan"
+          }
+        },
+        {
+          "key": "Ishlab chiqish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 22,
+          "score": 0.00023951558624424273,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 22
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.00023951558624424273
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "qilishda ularning malaka darajasini aniqlash uchun aniq talablarni ishlab chiqish lozim"
+          }
+        },
+        {
+          "key": "tizimli,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 0.00023671941639911114,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.00016954055922025965,
+            "appendix": 6.71788571788515e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "o'zbekiston respublikasida umumiy o'rta va maktabdan tashqari ta'limni tizimli isloh qilishning ustuvor yo'nalishlarini belgilash o'sib kelayotgan yosh",
+            "appendix": "tayyorlash mexanizmi yo'lga qo'yilmaganligi o'qituvchilarning bilim va malakasini tizimli oshirib borish imkonini bermayapti"
+          }
+        },
+        {
+          "key": "fanlar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 17,
+          "score": 0.00023565713888369058,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 17
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.00023565713888369058
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "respublikasida 9 691 ta umumta'lim maktablari jumladan ayrim fanlar chuqurlashtirib o'qitiladigan 350 ta davlat ixtisoslashtirilgan muassasalari mavjud"
+          }
+        },
+        {
+          "key": "Илмий",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 7,
+          "score": 0.00021192569902532462,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 7
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.00021192569902532462
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "oliy ta'lim muassasalarining ilmiy salohiyatga ega pedagogik jamoasini umumta'lim maktablarida iqtidorli bolalar"
+          }
+        },
+        {
+          "key": "talabalar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.00020345367956168392,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.00020345367956168392
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "appendix": "oliy ta'lim muassasalariga qabul qilish jarayoniga uzoq hududlardagi talabalar uchun o'qishga kirishda imtiyozlarning yo'qligi sababli tog va"
+          }
+        },
+        {
+          "key": "boshqarish,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 9,
+          "score": 0.00020259884905197514,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 8
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.00011302703948017313,
+            "appendix": 8.957180957180201e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "respublikasi prezidentining 2018 yil 5 sentyabrdagi xalq ta'limini boshqarish tizimini takomillashtirish bo'yicha qo'shimcha chora tadbirlar to'g'risida gi",
+            "appendix": "respublikasi prezidentining 2018 yil 5 sentyabrdagi xalq ta'limini boshqarish tizimini takomillashtirish bo'yicha qo'shimcha chora tadbirlar to'g'risida gi"
+          }
+        },
+        {
+          "key": "qaror",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 0.00018845442043188742,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.00018845442043188742
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "appendix": "axborot kommunikatsiya texnologiyalaridan foydalanish darajasi pastligi qabul qilinayotgan qarorlarning samarali amalga oshirilishini ta'minlash ushbu jarayonni tezkor kuzatib"
+          }
+        },
+        {
+          "key": "oliy ta'lim",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 12,
+          "score": 0.00016592980436556056,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 12
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.00016592980436556056
+          },
+          "shared_categories": 2,
+          "excerpts": {
+            "appendix": "oliy ta'lim muassasalariga qabul qilish jarayoniga uzoq hududlardagi talabalar uchun"
+          }
+        },
+        {
+          "key": "muddat",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 0.00015781294426607415,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 2
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.00011302703948017313,
+            "appendix": 4.4785904785901006e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "manfaatdor vazirliklar va idoralar bilan birgalikda ikki oy muddatda qonun hujjatlariga ushbu farmondan kelib chiqadigan o'zgartirish va",
+            "appendix": "o'quv muddatlarini o'zgartirmagan holda o'quvchilar tomonidan o'zlashtirish kompetentligini kengaytirishni ta'minlovchi"
+          }
+        },
+        {
+          "key": "tarkibi",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 0.00014128379935021639,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 3
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.00014128379935021639
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "o'quvchilar soni quvvatiga nisbatan kam bo'lgan maktablarda kadrlar tarkibi salohiyati pastligi tufayli talab darajasidagi ta'lim sifati ta'minlanmayapti"
+          }
+        },
+        {
+          "key": "rais",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.00012432974342819044,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 0
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.00012432974342819044,
+            "appendix": 0.0
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "qoraqalpog'iston respublikasi vazirlar kengashi raisi viloyatlar va toshkent shahar hokimlari mas'ul vazirliklar idoralar"
+          }
+        },
+        {
+          "key": "muddati",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.00012362332443143935,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.00012362332443143935
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "ijro muddati"
+          }
+        },
+        {
+          "key": "o'quv dastur,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 6,
+          "score": 0.0001121849712280414,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 6
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 0.0001121849712280414
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "pedagogika yo'nalishidagi oliy ta'lim muassasalari o'quv dasturlariga bo'lajak pedagog uchun mazmuniy yuklama bermaydigan ayrim fanlar"
+          }
+        },
+        {
+          "key": "kengash",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 12,
+          "score": 0.00010716323200308035,
+          "zones": {
+            "header": 0,
+            "body": 1,
+            "appendix": 11
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 5.6513519740086566e-05,
+            "appendix": 5.0649712262993786e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "body": "qoraqalpog'iston respublikasi vazirlar kengashi raisi viloyatlar va toshkent shahar hokimlari mas'ul vazirliklar",
+            "appendix": "qoraqalpog'iston respublikasi vazirlar kengashi viloyatlar va toshkent shahar hokimliklari moliya vazirligi qurilish"
+          }
+        },
+        {
+          "key": "amaliy",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 6,
+          "score": 7.93267539025658e-05,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 6
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 7.93267539025658e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "ta'limning kredit tizimiga bosqichma bosqich o'tkazish pedagogika didaktika amaliy pedagogik psixologiya metodika kabi fanlarga alohida e'tibor qaratgan"
+          }
+        },
+        {
+          "key": "tartib",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 6,
+          "score": 7.93267539025658e-05,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 6
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 7.93267539025658e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "o'sishiga hamda amaldagi muassasalar rahbarlarini tanlash va tayinlash tartibining samarasizligiga olib kelmoqda"
+          }
+        },
+        {
+          "key": "umumiy qoidalar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 5.994163955540253e-05,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 5.994163955540253e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "1 bob umumiy qoidalar"
+          }
+        },
+        {
+          "key": "конференция",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 5.2981424756331155e-05,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 5.2981424756331155e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "konferentsiya ko'rgazma va boshqa tadbirlar yordamida mamlakatning xalq ta'limi"
+          }
+        },
+        {
+          "key": "guruh",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 3.744020682780735e-05,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 1
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 3.744020682780735e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "olish bo'yicha samarali ichki tizim shuningdek o'quvchilarni xavf guruhidan chiqarish uchun maktab o'qituvchilari va psixologlari malakasini oshirish"
+          }
+        },
+        {
+          "key": "o'quv reja",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 2.3337278333570053e-05,
+          "zones": {
+            "header": 0,
+            "body": 0,
+            "appendix": 3
+          },
+          "zone_scores": {
+            "header": 0.0,
+            "body": 0.0,
+            "appendix": 2.3337278333570053e-05
+          },
+          "shared_categories": 1,
+          "excerpts": {
+            "appendix": "o'zgaruvchan o'quv rejalarini"
+          }
+        }
+      ]
+    }
+  },
+  "dictionary": {
+    "classification_id": 2,
+    "document_id": 2,
+    "database_id": 1,
+    "classifier_method": "dictionary",
+    "classification_result": {
+      "classification_kind": "dictionary",
+      "classifier_version": "dictionary-2.0",
+      "matching": "Uzbek Latin/Cyrillic, contiguous phrases and bounded suffix rules",
+      "matched_keyword_rows": 71,
+      "matched_keywords": [
+        {
+          "key": "Ахборот",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 38,
+          "score": 8390.4
+        },
+        {
+          "key": "Vazir",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 19,
+          "score": 6594.900000000001
+        },
+        {
+          "key": "prezident",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 13,
+          "score": 5811.26
+        },
+        {
+          "key": "O'zbekiston Respublikasi Prezidenti",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 11,
+          "score": 5182.099999999999
+        },
+        {
+          "key": "maktab",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 107,
+          "score": 4622.4
+        },
+        {
+          "key": "amaliyot",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 12,
+          "score": 3952.32
+        },
+        {
+          "key": "o'zlashtirish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 4,
+          "score": 1988.0
+        },
+        {
+          "key": "Oliy ta'lim",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 12,
+          "score": 1909.92
+        },
+        {
+          "key": "davlat",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 41,
+          "score": 1798.26
+        },
+        {
+          "key": "o'quvchilar,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 57,
+          "score": 1764.72
+        },
+        {
+          "key": "mahkama",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 3,
+          "score": 1402.5
+        },
+        {
+          "key": "qaror",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 2,
+          "score": 1374.4
+        },
+        {
+          "key": "farmon",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 12,
+          "score": 822.0
+        },
+        {
+          "key": "yoshlar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 19,
+          "score": 727.32
+        },
+        {
+          "key": "axborot texnologiyalari",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 5,
+          "score": 615.0
+        },
+        {
+          "key": "rivojlantirish",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 35,
+          "score": 556.85
+        },
+        {
+          "key": "talaba,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 497.0
+        },
+        {
+          "key": "axborot",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 38,
+          "score": 355.68
+        },
+        {
+          "key": "pedagog,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 25,
+          "score": 299.24999999999994
+        },
+        {
+          "key": "teatr",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 262.08
+        },
+        {
+          "key": "reja",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 4,
+          "score": 168.0
+        },
+        {
+          "key": "sinf",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 20,
+          "score": 129.6
+        },
+        {
+          "key": "Ta'lim sohasi",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 9,
+          "score": 116.64
+        },
+        {
+          "key": "yoshlar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 19,
+          "score": 109.44
+        },
+        {
+          "key": "Sonli",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 105.84
+        },
+        {
+          "key": "o'tkazish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 10,
+          "score": 81.0
+        },
+        {
+          "key": "ijtimoiy",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 5,
+          "score": 78.0
+        },
+        {
+          "key": "O'zbekiston Respublikasi",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 36,
+          "score": 68.03999999999999
+        },
+        {
+          "key": "mavzu",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 60.06
+        },
+        {
+          "key": "lavozim",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 56.99999999999999
+        },
+        {
+          "key": "илова",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 8,
+          "score": 54.72
+        },
+        {
+          "key": "iqtisodiyot",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 5,
+          "score": 53.75
+        },
+        {
+          "key": "muvofiq",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 5,
+          "score": 50.0
+        },
+        {
+          "key": "курс",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 6,
+          "score": 45.0
+        },
+        {
+          "key": "o'rta ta'lim",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 4,
+          "score": 43.199999999999996
+        },
+        {
+          "key": "Oliy va o'rta maxsus ta'lim vazirligi",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 2,
+          "score": 38.64
+        },
+        {
+          "key": "kamchilik",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 34.199999999999996
+        },
+        {
+          "key": "talabalar",
+          "category_id": 3,
+          "category": "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)",
+          "occurrences": 1,
+          "score": 25.2
+        },
+        {
+          "key": "o'tkazish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 10,
+          "score": 21.0
+        },
+        {
+          "key": "tuman,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 20.88
+        },
+        {
+          "key": "sertifikat",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 19.38
+        },
+        {
+          "key": "faoliyat",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 17,
+          "score": 17.0
+        },
+        {
+          "key": "hokim",
+          "category_id": 1,
+          "category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+          "occurrences": 1,
+          "score": 15.66
+        },
+        {
+          "key": "farmon",
+          "category_id": 2,
+          "category": "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)",
+          "occurrences": 12,
+          "score": 14.399999999999999
+        },
+        {
+          "key": "madaniy",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 14.1
+        },
+        {
+          "key": "fanlar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 17,
+          "score": 13.600000000000001
+        },
+        {
+          "key": "Ma'naviy",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 13.16
+        },
+        {
+          "key": "Ishlab chiqish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 22,
+          "score": 11.66
+        },
+        {
+          "key": "oliy ta'lim",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 12,
+          "score": 7.199999999999999
+        },
+        {
+          "key": "Илмий",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 7,
+          "score": 7.0
+        },
+        {
+          "key": "taqdim etish",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 5.25
+        },
+        {
+          "key": "qaror",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 2,
+          "score": 4.5
+        },
+        {
+          "key": "vazifa",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 5,
+          "score": 4.0
+        },
+        {
+          "key": "korxona",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 3.9899999999999998
+        },
+        {
+          "key": "talabalar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 3.8499999999999996
+        },
+        {
+          "key": "boshqarish,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 9,
+          "score": 3.6
+        },
+        {
+          "key": "tarkibi",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 3.0
+        },
+        {
+          "key": "amaliy",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 6,
+          "score": 2.4000000000000004
+        },
+        {
+          "key": "kengash",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 12,
+          "score": 2.4000000000000004
+        },
+        {
+          "key": "kengash",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 12,
+          "score": 2.4000000000000004
+        },
+        {
+          "key": "o'quv dastur,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 6,
+          "score": 2.4000000000000004
+        },
+        {
+          "key": "tartib",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 6,
+          "score": 2.4000000000000004
+        },
+        {
+          "key": "tizimli,",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 1.7999999999999998
+        },
+        {
+          "key": "muddati",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 1.75
+        },
+        {
+          "key": "reja",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 4,
+          "score": 1.4
+        },
+        {
+          "key": "muddat",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 1.2000000000000002
+        },
+        {
+          "key": "конференция",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.75
+        },
+        {
+          "key": "umumiy qoidalar",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.6
+        },
+        {
+          "key": "guruh",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.53
+        },
+        {
+          "key": "rais",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 1,
+          "score": 0.44
+        },
+        {
+          "key": "o'quv reja",
+          "category_id": 4,
+          "category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+          "occurrences": 3,
+          "score": 0.3504
+        }
+      ],
+      "predicted_category": "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)",
+      "predicted_category_id": 1,
+      "relative_score_share": 0.48256960262871945,
+      "confidence": 0.48256960262871945,
+      "margin_raw": 8673.899599999995,
+      "margin_share": 0.17186677399224326,
+      "runner_up_category_id": 4,
+      "runner_up_category": "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)",
+      "runner_up_raw": 15680.780400000001,
+      "runner_up_share": 0.3107028286364762,
+      "only_one_scoring_class": false,
+      "all_scores": {
+        "1": 24354.679999999997,
+        "2": 10408.08,
+        "3": 25.2,
+        "4": 15680.780400000001
+      },
+      "all_scores_by_name": {
+        "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)": 24354.679999999997,
+        "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)": 10408.08,
+        "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)": 25.2,
+        "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)": 15680.780400000001
+      },
+      "score_shares": {
+        "1": 0.48256960262871945,
+        "2": 0.2062282497543767,
+        "3": 0.0004993189804277342,
+        "4": 0.3107028286364762
+      },
+      "score_shares_by_name": {
+        "O’zbekiston Respublikasi Prezidenti farmonlari, O’zbekiston Respublikasi Vazirlar Mahkamasining qarorlari va farmoyishlari (nusxasi) (1-папка)": 0.48256960262871945,
+        "O’zbekiston Respublikasi Oliy va o’rta maxsus ta’lim vazirligi, O’zbekiston Respublikasi Axborot texnologiyalari va kommunikasiyalarni rivojlantirish vazirligining hay’at qarorlari , buyruqlari , farmoyishlari va ularni bajarish to’g’risidagi yozishmalar (2-папка)": 0.2062282497543767,
+        "Universitet rektori va prorektorlarining kafedra faoliyatiga oid buyruqlari, topshiriqlari va ularning bajarilishi to’g’risida ma’lumotnomalar (3-папка)": 0.0004993189804277342,
+        "Kafedra yig’ilishlari yillik ish rajasi va bayonnomalari (4-папка)": 0.3107028286364762
+      }
+    }
+  },
+  "checks": [
+    "UI submitted structural analysis",
+    "Folder 1",
+    "Evidence with zones and match excerpts",
+    "Cache and forced recompute consistent",
+    "Dictionary baseline unchanged",
+    "Originals unchanged"
+  ],
+  "limitations": [
+    "One teacher example, not a corpus accuracy estimate",
+    "Parameters not tuned on labelled archival corpus"
+  ]
+}

@@ -1,17 +1,17 @@
 import { api } from "./client.js";
 
-export async function fetchDatabases() {
-  const { data } = await api.get("/database");
+export async function fetchDatabases(config) {
+  const { data } = await api.get("/database", { timeout: 15000, ...config });
   return data;
 }
 
-export async function fetchDocuments() {
-  const { data } = await api.get("/document");
+export async function fetchDocuments(config) {
+  const { data } = await api.get("/document", { timeout: 15000, ...config });
   return data;
 }
 
-export async function fetchClassifications() {
-  const { data } = await api.get("/classify");
+export async function fetchClassifications(config) {
+  const { data } = await api.get("/classify", { timeout: 15000, ...config });
   return data;
 }
 
@@ -46,12 +46,18 @@ export async function createClassificationApi(body) {
   return data;
 }
 
-export async function fetchMlStatus() {
-  const { data } = await api.get("/ml/status");
+export async function fetchMlStatus(config) {
+  const { data } = await api.get("/ml/status", { timeout: 15000, ...config });
   return data;
 }
 
 export async function fetchClassificationResult(id) {
   const { data } = await api.get(`/classify/${id}`);
-  return data.classification_result;
+  return {
+    ...data.classification_result,
+    classification_kind:
+      data.classification_result?.classification_kind ||
+      data.classifier_method ||
+      "dictionary",
+  };
 }

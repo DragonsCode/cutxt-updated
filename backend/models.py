@@ -39,12 +39,12 @@ class ClassifyRequest(BaseModel):
     document_id: int
     database_id: int | None = None
     force_recompute: bool = False
-    method: Literal["dictionary", "ml"] = "dictionary"
+    method: Literal["dictionary", "structural", "ml"] = "dictionary"
 
     @model_validator(mode="after")
     def validate_method_and_db(self):
-        if self.method == "dictionary":
+        if self.method in {"dictionary", "structural"}:
             if self.database_id is None or self.database_id <= 0:
-                raise ValueError("Для метода dictionary укажите положительный database_id эталона")
+                raise ValueError("Для выбранного метода укажите положительный database_id эталона")
             return self
         return self.model_copy(update={"database_id": -1})

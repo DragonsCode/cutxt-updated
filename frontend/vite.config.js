@@ -20,6 +20,17 @@ export default defineConfig({
   resolve: {
     dedupe: ["react", "react-dom"],
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("/node_modules/@mantine/")) return "mantine";
+          if (/\/node_modules\/(react|react-dom|scheduler)\//.test(id))
+            return "react";
+        },
+      },
+    },
+  },
   server: {
     host: true,
     allowedHosts: true,

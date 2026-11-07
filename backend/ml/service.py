@@ -15,6 +15,7 @@ from ml.transformer_utils import (
     normalize_text_for_transformer,
 )
 from nlp.text_for_ml import normalize_text_for_ml
+from nlp.uzbek_normalization import NORMALIZATION_VERSION, normalize_uzbek_text
 
 _PIPELINE: Any = None
 _TOKENIZER: Any = None
@@ -137,6 +138,13 @@ def ml_status() -> dict[str, Any]:
             "calibrated": _META.get("calibrated", False),
             "backend": _META.get("backend", "sklearn"),
             "labels": classes,
+            "training_samples": _META.get("train_samples"),
+            "test_samples": _META.get("test_samples"),
+            "algorithm": _META.get("algorithm"),
+            "scripts": _META.get("scripts", []),
+            "dataset": _META.get("dataset"),
+            "test_metrics": _META.get("test_metrics"),
+            "limitations": _META.get("limitations", []),
         }
     err = _LOAD_ERROR or "Модель не загружена"
     return {
@@ -170,7 +178,10 @@ def classify_ml_text(raw_text: str) -> dict[str, Any]:
         proba = torch.softmax(logits, dim=-1).cpu().tolist()
         classes = [str(x) for x in _META.get("label_names", [])]
     else:
-        text = normalize_text_for_ml(raw_text)
+        if _META.get("normalization") == NORMALIZATION_VERSION:
+            text = normalize_uzbek_text(raw_text)
+        else:
+            text = normalize_text_for_ml(raw_text)
         if not text.strip():
             raise ValueError("После нормализации текст пуст — нечего классифицировать")
 

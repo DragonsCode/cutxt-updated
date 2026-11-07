@@ -4,12 +4,12 @@ import {
   Button,
   Group,
   Stack,
-  Text,
   Textarea,
-  Switch,
-  FileButton,
+  SegmentedControl,
+  FileInput,
+  Text,
 } from "@mantine/core";
-import { IconUpload } from "@tabler/icons-react";
+import { IconUpload, IconFileText, IconCheck } from "@tabler/icons-react";
 import { basenameNoExt } from "../../utils/files.js";
 
 export function DocumentModal({
@@ -22,98 +22,125 @@ export function DocumentModal({
   errors,
   onClearError,
 }) {
-  const ph = formState.useText
-    ? "Например: договор от 2024"
-    : formState.docFile
-      ? basenameNoExt(formState.docFile)
-      : "Выберите файл — подсказка появится здесь";
-
   return (
-    <Modal opened={opened} onClose={onClose} title="Новый документ" radius="lg" centered size="lg">
-      <Stack gap="md">
-        <TextInput
-          label="Название в списке"
-          placeholder={ph}
-          description={
-            formState.useText
-              ? "Обязательно заполните для режима текста"
-              : formState.docFile
-                ? "Пустое поле = взять имя из подсказки"
-                : "Выберите PDF/DOCX или переключитесь на текст"
-          }
-          value={formState.docName}
-          onChange={(e) => {
-            onClearError?.("docName");
-            setFormState((p) => ({ ...p, docName: e.target.value }));
-          }}
-          error={errors.docName}
-        />
-        <Switch
-          label="Вставить текст вместо файла"
-          checked={formState.useText}
-          onChange={(e) => {
-            onClearError?.("docText");
-            onClearError?.("docFile");
-            setFormState((p) => ({
-              ...p,
-              useText: e.currentTarget.checked,
-              docFile: e.currentTarget.checked ? null : p.docFile,
-            }));
-          }}
-        />
-        {formState.useText ? (
-          <Textarea
-            label="Текст"
-            placeholder="Вставьте фрагмент или целый текст…"
-            minRows={5}
-            autosize
-            maxRows={12}
-            name="docText"
-            value={formState.docText}
-            onChange={(e) => {
-              onClearError?.("docText");
-              setFormState((p) => ({ ...p, docText: e.target.value }));
-            }}
-            error={errors.docText}
-          />
-        ) : (
-          <Group align="flex-end">
-            <FileButton accept=".pdf,.docx,application/pdf" onChange={(file) => {
+    <Modal
+      opened={opened}
+      onClose={onClose}
+      title="Добавить документ"
+      centered
+      size="lg"
+      closeOnClickOutside={!submitting}
+      closeOnEscape={!submitting}
+      withCloseButton={!submitting}
+    >
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          onSubmit();
+        }}
+      >
+        <Stack gap="lg">
+          <Text size="sm" c="dimmed">
+            Загрузите файл или вставьте текст. Документ сохранится в библиотеке
+            и будет доступен для анализа.
+          </Text>
+          <SegmentedControl
+            fullWidth
+            value={formState.useText ? "text" : "file"}
+            disabled={submitting}
+            onChange={(value) => {
               onClearError?.("docFile");
-              setFormState((p) => ({ ...p, docFile: file }));
-            }}>
-              {(props) => (
-                <Button {...props} leftSection={<IconUpload size={18} />} variant="light">
-                  PDF или DOCX
-                </Button>
-              )}
-            </FileButton>
-            {formState.docFile && (
-              <Text size="sm" c="dimmed" truncate maw={280}>
-                {formState.docFile.name}
-              </Text>
-            )}
-            {errors.docFile && (
-              <Text size="sm" c="red">
-                {errors.docFile}
-              </Text>
-            )}
+              onClearError?.("docText");
+              setFormState((previous) => ({
+                ...previous,
+                useText: value === "text",
+              }));
+            }}
+            data={[
+              { label: "Загрузить файл", value: "file" },
+              { label: "Вставить текст", value: "text" },
+            ]}
+          />
+          {formState.useText ? (
+            <Textarea
+              label="Текст документа"
+              placeholder="Вставьте текст, который нужно классифицировать…"
+              minRows={7}
+              autosize
+              maxRows={14}
+              value={formState.docText}
+              disabled={submitting}
+              onChange={(event) => {
+                onClearError?.("docText");
+                setFormState((previous) => ({
+                  ...previous,
+                  docText: event.target.value,
+                }));
+              }}
+              error={errors.docText}
+              required
+            />
+          ) : (
+            <div className="upload-area">
+              <IconUpload size={30} stroke={1.5} />
+              <h3>Документ для вашей библиотеки</h3>
+              <p>Поддерживаются PDF и DOCX</p>
+              <FileInput
+                accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                placeholder="Выбрать файл"
+                aria-label="Файл документа"
+                value={formState.docFile}
+                disabled={submitting}
+                onChange={(file) => {
+                  onClearError?.("docFile");
+                  onClearError?.("docName");
+                  setFormState((previous) => ({ ...previous, docFile: file }));
+                }}
+                error={errors.docFile}
+                leftSection={<IconFileText size={17} />}
+                clearable
+              />
+            </div>
+          )}
+          <TextInput
+            label="Название документа"
+            placeholder={
+              formState.useText
+                ? "Например: отчёт за октябрь"
+                : basenameNoExt(formState.docFile) ||
+                  "Например: договор поставки"
+            }
+            description={
+              formState.useText
+                ? "Название поможет найти текст в библиотеке"
+                : "Если оставить пустым, используем имя файла"
+            }
+            value={formState.docName}
+            disabled={submitting}
+            onChange={(event) => {
+              onClearError?.("docName");
+              setFormState((previous) => ({
+                ...previous,
+                docName: event.target.value,
+              }));
+            }}
+            error={errors.docName}
+            required={formState.useText}
+          />
+          <Group justify="flex-end" mt="xs">
+            <Button variant="default" disabled={submitting} onClick={onClose}>
+              Отмена
+            </Button>
+            <Button
+              type="submit"
+              loading={submitting}
+              leftSection={<IconCheck size={17} />}
+            >
+              Сохранить документ
+            </Button>
           </Group>
-        )}
-        <Group justify="flex-end" mt="md">
-          <Button variant="default" onClick={onClose}>
-            Отмена
-          </Button>
-          <Button
-            loading={submitting}
-            onClick={onSubmit}
-            gradient={{ from: "cyan", to: "blue" }}
-            variant="gradient"
-          >
-            Сохранить
-          </Button>
-        </Group>
-      </Stack>
+        </Stack>
+      </form>
     </Modal>
   );
 }
